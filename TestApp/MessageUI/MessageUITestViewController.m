@@ -62,5 +62,6 @@
         default:
             break;
     }
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 @end
