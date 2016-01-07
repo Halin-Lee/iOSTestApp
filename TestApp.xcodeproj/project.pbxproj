@@ -54,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92389D251B0E35E566EBFDC7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,10 +109,12 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF161F161BF19C10004F3242 /* DataBinding */,
 				FFDA446F1BA7BBE7009C1E34 /* MessageUI */,
 				FFDA446B1BA7B767009C1E34 /* Main */,
 				FFDA44461BA7B659009C1E34 /* AppDelegate.h */,
 				FFDA44471BA7B659009C1E34 /* AppDelegate.m */,
+				FF161F361BF1F27B004F3242 /* Singleton.h */,
 				FFDA444C1BA7B659009C1E34 /* Main.storyboard */,
 				FFDA444F1BA7B659009C1E34 /* Images.xcassets */,
 				FFDA44511BA7B659009C1E34 /* LaunchScreen.xib */,
@@ -149,6 +152,7 @@
 		FFDA446B1BA7B767009C1E34 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				FF161F0F1BF189AA004F3242 /* Model */,
 				FFDA446C1BA7B767009C1E34 /* MainViewController.h */,
 				FFDA446D1BA7B767009C1E34 /* MainViewController.m */,
 			);
@@ -171,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFDA44621BA7B659009C1E34 /* Build configuration list for PBXNativeTarget "TestApp" */;
 			buildPhases = (
+				ACBAEE9B3B1EEFE522E439BB /* Check Pods Manifest.lock */,
 				FFDA443B1BA7B658009C1E34 /* Sources */,
 				FFDA443C1BA7B658009C1E34 /* Frameworks */,
 				FFDA443D1BA7B658009C1E34 /* Resources */,
+				BE1B6DEA51EA44BFA5E43DE3 /* Embed Pods Frameworks */,
+				F4CA3FF53BB24CC3C8B03279 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +256,9 @@
 			files = (
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
 				FFDA44531BA7B659009C1E34 /* LaunchScreen.xib in Resources */,
+				FFD05CC11BFF19720055C947 /* DataBindingPlaceHolderView.xib in Resources */,
+				FFD05CC51BFF19720055C947 /* DataBindingPlaceHolderRootView.xib in Resources */,
+				FFD05CC71BFF19720055C947 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
 				FFDA44501BA7B659009C1E34 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,8 +325,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD05CC41BFF19720055C947 /* DataBindingPlaceHolderRootView.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
+				FF161F151BF18B55004F3242 /* TestBuilder.m in Sources */,
+				FFD05CC31BFF19720055C947 /* DataBindingPlaceHolderbTestModel.m in Sources */,
 				FFDA44451BA7B659009C1E34 /* main.m in Sources */,
+				FFD05CC21BFF19720055C947 /* DataBindingPlaceHolderViewController.m in Sources */,
+				FFD05CC61BFF19720055C947 /* DataBindingPlaceHolderTestLabel.m in Sources */,
+				FF161F121BF189C5004F3242 /* TestItem.m in Sources */,
 				FFDA44721BA7BC25009C1E34 /* MessageUITestViewController.m in Sources */,
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,
 			);
@@ -440,8 +456,11 @@
 		};
 		FFDA44631BA7B659009C1E34 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FF22C9B95C82868E3E8ACBB /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -450,8 +469,11 @@
 		};
 		FFDA44641BA7B659009C1E34 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33C3211376110DEFC9C3056E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

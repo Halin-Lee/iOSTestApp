@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,8 +17,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-h7-wIW">
+                                <rect key="frame" x="16" y="20" width="568" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="klt-Wd-Zg2">
-                                <rect key="frame" x="0.0" y="20" width="600" height="560"/>
+                                <rect key="frame" x="0.0" y="53" width="600" height="494"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="wPt-1P-6ce">
@@ -36,9 +43,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="klt-Wd-Zg2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="MTs-kK-3iD" userLabel="Table顶对齐容器"/>
+                            <constraint firstItem="WiD-h7-wIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dee-xf-sBe" userLabel="Label水平居中"/>
+                            <constraint firstItem="WiD-h7-wIW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O0e-v9-Yp4" userLabel="Label左对齐容器"/>
+                            <constraint firstItem="WiD-h7-wIW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Oz4-BP-Cz1" userLabel="Label顶对齐容器"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XFc-Zi-l0V" userLabel="Table水平居中"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aUK-rb-L1e" userLabel="Table左对齐容器"/>
+                            <constraint firstItem="klt-Wd-Zg2" firstAttribute="top" secondItem="WiD-h7-wIW" secondAttribute="bottom" id="gq2-Qy-ADk" userLabel="Table在Label下方"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mWh-oT-RqY" userLabel="Table垂直居中"/>
                         </constraints>
                     </view>
