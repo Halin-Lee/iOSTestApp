@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		729EB064A03B7FBA6838CC83 /* libPods-TestAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60634101F918501C427940EF /* libPods-TestAppTests.a */; };
+		A3EFFCE92F8A0B5AEEDF5AB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A6AF78E04FA3467958C87 /* libPods.a */; };
+		DA6F66571C3E6A050006D8A3 /* TestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66541C3E6A050006D8A3 /* TestBuilder.m */; };
+		DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66561C3E6A050006D8A3 /* TestItem.m */; };
+		DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F665C1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m */; };
+		DA6F66681C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F665D1C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib */; };
+		DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F665F1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m */; };
+		DA6F666A1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66621C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m */; };
+		DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66631C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib */; };
+		DA6F666C1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66651C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m */; };
+		DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */; };
+		DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */; };
 		FFDA44451BA7B659009C1E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44441BA7B659009C1E34 /* main.m */; };
 		FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44471BA7B659009C1E34 /* AppDelegate.m */; };
 		FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA444C1BA7B659009C1E34 /* Main.storyboard */; };
@@ -29,9 +40,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		249A6AF78E04FA3467958C87 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		60634101F918501C427940EF /* libPods-TestAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TestAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		67CED7AFBA1166512CF2B91D /* Pods-TestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BC2E8746E59B1AA173563EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AFE19E630EB3540D517329 /* Pods-TestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA6F66531C3E6A050006D8A3 /* TestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBuilder.h; sourceTree = "<group>"; };
+		DA6F66541C3E6A050006D8A3 /* TestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBuilder.m; sourceTree = "<group>"; };
+		DA6F66551C3E6A050006D8A3 /* TestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestItem.h; sourceTree = "<group>"; };
+		DA6F66561C3E6A050006D8A3 /* TestItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestItem.m; sourceTree = "<group>"; };
+		DA6F665B1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingPlaceHolderbTestModel.h; sourceTree = "<group>"; };
+		DA6F665C1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingPlaceHolderbTestModel.m; sourceTree = "<group>"; };
+		DA6F665D1C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderView.xib; sourceTree = "<group>"; };
+		DA6F665E1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingPlaceHolderViewController.h; sourceTree = "<group>"; };
+		DA6F665F1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingPlaceHolderViewController.m; sourceTree = "<group>"; };
+		DA6F66611C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingPlaceHolderRootView.h; sourceTree = "<group>"; };
+		DA6F66621C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingPlaceHolderRootView.m; sourceTree = "<group>"; };
+		DA6F66631C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderRootView.xib; sourceTree = "<group>"; };
+		DA6F66641C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingPlaceHolderTestLabel.h; sourceTree = "<group>"; };
+		DA6F66651C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingPlaceHolderTestLabel.m; sourceTree = "<group>"; };
+		DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderTestLabel.xib; sourceTree = "<group>"; };
+		DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		E9F36856A80EAC64B0F95E9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FFDA443F1BA7B658009C1E34 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDA44431BA7B659009C1E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFDA44441BA7B659009C1E34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92389D251B0E35E566EBFDC7 /* libPods.a in Frameworks */,
+				A3EFFCE92F8A0B5AEEDF5AB3 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				60634101F918501C427940EF /* libPods-TestAppTests.a */,
+				249A6AF78E04FA3467958C87 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,8 +113,56 @@
 			children = (
 				67CED7AFBA1166512CF2B91D /* Pods-TestAppTests.debug.xcconfig */,
 				D5AFE19E630EB3540D517329 /* Pods-TestAppTests.release.xcconfig */,
+				9BC2E8746E59B1AA173563EC /* Pods.debug.xcconfig */,
+				E9F36856A80EAC64B0F95E9B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		DA6F66521C3E6A050006D8A3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F66531C3E6A050006D8A3 /* TestBuilder.h */,
+				DA6F66541C3E6A050006D8A3 /* TestBuilder.m */,
+				DA6F66551C3E6A050006D8A3 /* TestItem.h */,
+				DA6F66561C3E6A050006D8A3 /* TestItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DA6F66591C3E6A250006D8A3 /* DataBinding */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F665A1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController */,
+			);
+			path = DataBinding;
+			sourceTree = "<group>";
+		};
+		DA6F665A1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F665B1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.h */,
+				DA6F665C1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m */,
+				DA6F665D1C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib */,
+				DA6F665E1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.h */,
+				DA6F665F1C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m */,
+				DA6F66601C3E6A250006D8A3 /* View */,
+			);
+			path = DataBindingPlaceHolderViewController;
+			sourceTree = "<group>";
+		};
+		DA6F66601C3E6A250006D8A3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F66611C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.h */,
+				DA6F66621C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m */,
+				DA6F66631C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib */,
+				DA6F66641C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.h */,
+				DA6F66651C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m */,
+				DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */,
+				DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FFDA44361BA7B658009C1E34 = {
@@ -109,12 +188,11 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
-				FF161F161BF19C10004F3242 /* DataBinding */,
+				DA6F66591C3E6A250006D8A3 /* DataBinding */,
 				FFDA446F1BA7BBE7009C1E34 /* MessageUI */,
 				FFDA446B1BA7B767009C1E34 /* Main */,
 				FFDA44461BA7B659009C1E34 /* AppDelegate.h */,
 				FFDA44471BA7B659009C1E34 /* AppDelegate.m */,
-				FF161F361BF1F27B004F3242 /* Singleton.h */,
 				FFDA444C1BA7B659009C1E34 /* Main.storyboard */,
 				FFDA444F1BA7B659009C1E34 /* Images.xcassets */,
 				FFDA44511BA7B659009C1E34 /* LaunchScreen.xib */,
@@ -152,7 +230,7 @@
 		FFDA446B1BA7B767009C1E34 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				FF161F0F1BF189AA004F3242 /* Model */,
+				DA6F66521C3E6A050006D8A3 /* Model */,
 				FFDA446C1BA7B767009C1E34 /* MainViewController.h */,
 				FFDA446D1BA7B767009C1E34 /* MainViewController.m */,
 			);
@@ -175,12 +253,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFDA44621BA7B659009C1E34 /* Build configuration list for PBXNativeTarget "TestApp" */;
 			buildPhases = (
-				ACBAEE9B3B1EEFE522E439BB /* Check Pods Manifest.lock */,
+				ABA32A3C1BFF26E2493D1FC4 /* Check Pods Manifest.lock */,
 				FFDA443B1BA7B658009C1E34 /* Sources */,
 				FFDA443C1BA7B658009C1E34 /* Frameworks */,
 				FFDA443D1BA7B658009C1E34 /* Resources */,
-				BE1B6DEA51EA44BFA5E43DE3 /* Embed Pods Frameworks */,
-				F4CA3FF53BB24CC3C8B03279 /* Copy Pods Resources */,
+				F375AD34FFDD61DD5CB83391 /* Embed Pods Frameworks */,
+				2C1CD0EDB7B9B277D9A3B798 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,11 +332,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */,
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
+				DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
 				FFDA44531BA7B659009C1E34 /* LaunchScreen.xib in Resources */,
-				FFD05CC11BFF19720055C947 /* DataBindingPlaceHolderView.xib in Resources */,
-				FFD05CC51BFF19720055C947 /* DataBindingPlaceHolderRootView.xib in Resources */,
-				FFD05CC71BFF19720055C947 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
+				DA6F66681C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib in Resources */,
+				DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */,
 				FFDA44501BA7B659009C1E34 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +382,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		2C1CD0EDB7B9B277D9A3B798 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA32A3C1BFF26E2493D1FC4 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		ADC1D7D278D57E356A77CC84 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,6 +427,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F375AD34FFDD61DD5CB83391 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,16 +449,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFD05CC41BFF19720055C947 /* DataBindingPlaceHolderRootView.m in Sources */,
+				DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
-				FF161F151BF18B55004F3242 /* TestBuilder.m in Sources */,
-				FFD05CC31BFF19720055C947 /* DataBindingPlaceHolderbTestModel.m in Sources */,
+				DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */,
 				FFDA44451BA7B659009C1E34 /* main.m in Sources */,
-				FFD05CC21BFF19720055C947 /* DataBindingPlaceHolderViewController.m in Sources */,
-				FFD05CC61BFF19720055C947 /* DataBindingPlaceHolderTestLabel.m in Sources */,
-				FF161F121BF189C5004F3242 /* TestItem.m in Sources */,
+				DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */,
 				FFDA44721BA7BC25009C1E34 /* MessageUITestViewController.m in Sources */,
+				DA6F666C1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m in Sources */,
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,
+				DA6F666A1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m in Sources */,
+				DA6F66571C3E6A050006D8A3 /* TestBuilder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +580,7 @@
 		};
 		FFDA44631BA7B659009C1E34 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3FF22C9B95C82868E3E8ACBB /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 9BC2E8746E59B1AA173563EC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -469,7 +593,7 @@
 		};
 		FFDA44641BA7B659009C1E34 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 33C3211376110DEFC9C3056E /* Pods.release.xcconfig */;
+			baseConfigurationReference = E9F36856A80EAC64B0F95E9B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;

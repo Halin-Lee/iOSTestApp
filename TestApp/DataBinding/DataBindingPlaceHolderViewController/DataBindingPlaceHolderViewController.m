@@ -7,7 +7,7 @@
 //
 
 #import "DataBindingPlaceHolderViewController.h"
-#import "DataBindingLib.h"
+#import <DataBindingLib.h>
 #import "DataBindingPlaceHolderbTestModel.h"
 
 
