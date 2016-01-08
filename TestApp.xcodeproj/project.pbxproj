@@ -19,6 +19,7 @@
 		DA6F666C1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66651C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m */; };
 		DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */; };
 		DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */; };
+		DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */; };
 		FFDA44451BA7B659009C1E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44441BA7B659009C1E34 /* main.m */; };
 		FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44471BA7B659009C1E34 /* AppDelegate.m */; };
 		FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA444C1BA7B659009C1E34 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		DA6F66651C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingPlaceHolderTestLabel.m; sourceTree = "<group>"; };
 		DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderTestLabel.xib; sourceTree = "<group>"; };
 		DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
+		DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
 		E9F36856A80EAC64B0F95E9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FFDA443F1BA7B658009C1E34 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDA44431BA7B659009C1E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -165,6 +167,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		DA6F66701C3E6F9B0006D8A3 /* KiwiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */,
+			);
+			path = KiwiDemo;
+			sourceTree = "<group>";
+		};
 		FFDA44361BA7B658009C1E34 = {
 			isa = PBXGroup;
 			children = (
@@ -213,6 +223,7 @@
 		FFDA445B1BA7B659009C1E34 /* TestAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				DA6F66701C3E6F9B0006D8A3 /* KiwiDemo */,
 				FFDA445E1BA7B659009C1E34 /* TestAppTests.m */,
 				FFDA445C1BA7B659009C1E34 /* Supporting Files */,
 			);
@@ -466,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */,
 				FFDA445F1BA7B659009C1E34 /* TestAppTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
