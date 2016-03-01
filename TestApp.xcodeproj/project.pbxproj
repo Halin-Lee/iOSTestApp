@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		729EB064A03B7FBA6838CC83 /* libPods-TestAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60634101F918501C427940EF /* libPods-TestAppTests.a */; };
 		A3EFFCE92F8A0B5AEEDF5AB3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 249A6AF78E04FA3467958C87 /* libPods.a */; };
+		DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A41C85727300CC2F3F /* MenuViewController.m */; };
+		DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */; };
+		DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */; };
 		DA6F66571C3E6A050006D8A3 /* TestBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66541C3E6A050006D8A3 /* TestBuilder.m */; };
 		DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66561C3E6A050006D8A3 /* TestItem.m */; };
 		DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F665C1C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m */; };
@@ -20,6 +23,9 @@
 		DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */; };
 		DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */; };
 		DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */; };
+		DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC291C6495C6008605E1 /* PPMainViewController.m */; };
+		DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */; };
+		DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */; };
 		FFDA44451BA7B659009C1E34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44441BA7B659009C1E34 /* main.m */; };
 		FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDA44471BA7B659009C1E34 /* AppDelegate.m */; };
 		FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFDA444C1BA7B659009C1E34 /* Main.storyboard */; };
@@ -46,6 +52,12 @@
 		67CED7AFBA1166512CF2B91D /* Pods-TestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9BC2E8746E59B1AA173563EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D5AFE19E630EB3540D517329 /* Pods-TestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestAppTests/Pods-TestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA2A44A31C85727300CC2F3F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		DA2A44A41C85727300CC2F3F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		DA2A44A51C85727300CC2F3F /* SlideMenuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuRootViewController.h; sourceTree = "<group>"; };
+		DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuRootViewController.m; sourceTree = "<group>"; };
+		DA2A44A91C8572F100CC2F3F /* LeftSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideViewController.h; sourceTree = "<group>"; };
+		DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideViewController.m; sourceTree = "<group>"; };
 		DA6F66531C3E6A050006D8A3 /* TestBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBuilder.h; sourceTree = "<group>"; };
 		DA6F66541C3E6A050006D8A3 /* TestBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBuilder.m; sourceTree = "<group>"; };
 		DA6F66551C3E6A050006D8A3 /* TestItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestItem.h; sourceTree = "<group>"; };
@@ -63,6 +75,11 @@
 		DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderTestLabel.xib; sourceTree = "<group>"; };
 		DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
+		DA86DC281C6495C6008605E1 /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
+		DA86DC291C6495C6008605E1 /* PPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMainViewController.m; sourceTree = "<group>"; };
+		DA86DC341C64A390008605E1 /* PPPhoneFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPhoneFileBrowserViewController.h; sourceTree = "<group>"; };
+		DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPhoneFileBrowserViewController.m; sourceTree = "<group>"; };
+		DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPPhoneFileBrowserViewController.xib; sourceTree = "<group>"; };
 		E9F36856A80EAC64B0F95E9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		FFDA443F1BA7B658009C1E34 /* TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFDA44431BA7B659009C1E34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +138,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DA2A44A11C85727300CC2F3F /* SlideMenuController */ = {
+			isa = PBXGroup;
+			children = (
+				DA2A44A31C85727300CC2F3F /* MenuViewController.h */,
+				DA2A44A41C85727300CC2F3F /* MenuViewController.m */,
+				DA2A44A51C85727300CC2F3F /* SlideMenuRootViewController.h */,
+				DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */,
+			);
+			path = SlideMenuController;
+			sourceTree = "<group>";
+		};
 		DA6F66521C3E6A050006D8A3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +203,27 @@
 			path = KiwiDemo;
 			sourceTree = "<group>";
 		};
+		DA86DC261C647AA5008605E1 /* ProjectPrestudy */ = {
+			isa = PBXGroup;
+			children = (
+				DA86DC2B1C64A31A008605E1 /* PhotoFIleBrowser */,
+				DA86DC281C6495C6008605E1 /* PPMainViewController.h */,
+				DA86DC291C6495C6008605E1 /* PPMainViewController.m */,
+			);
+			path = ProjectPrestudy;
+			sourceTree = "<group>";
+		};
+		DA86DC2B1C64A31A008605E1 /* PhotoFIleBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				DA86DC341C64A390008605E1 /* PPPhoneFileBrowserViewController.h */,
+				DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */,
+				DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */,
+			);
+			name = PhotoFIleBrowser;
+			path = TestApp/ProjectPrestudy/PhotoFIleBrowser;
+			sourceTree = SOURCE_ROOT;
+		};
 		FFDA44361BA7B658009C1E34 = {
 			isa = PBXGroup;
 			children = (
@@ -198,8 +247,10 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA86DC261C647AA5008605E1 /* ProjectPrestudy */,
 				DA6F66591C3E6A250006D8A3 /* DataBinding */,
 				FFDA446F1BA7BBE7009C1E34 /* MessageUI */,
+				DA2A44A11C85727300CC2F3F /* SlideMenuController */,
 				FFDA446B1BA7B767009C1E34 /* Main */,
 				FFDA44461BA7B659009C1E34 /* AppDelegate.h */,
 				FFDA44471BA7B659009C1E34 /* AppDelegate.m */,
@@ -241,6 +292,8 @@
 		FFDA446B1BA7B767009C1E34 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DA2A44A91C8572F100CC2F3F /* LeftSideViewController.h */,
+				DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */,
 				DA6F66521C3E6A050006D8A3 /* Model */,
 				FFDA446C1BA7B767009C1E34 /* MainViewController.h */,
 				FFDA446D1BA7B767009C1E34 /* MainViewController.m */,
@@ -345,6 +398,7 @@
 			files = (
 				DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */,
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
+				DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */,
 				DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
 				FFDA44531BA7B659009C1E34 /* LaunchScreen.xib in Resources */,
 				DA6F66681C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib in Resources */,
@@ -462,9 +516,14 @@
 			files = (
 				DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
+				DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */,
+				DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */,
 				DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */,
+				DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */,
 				FFDA44451BA7B659009C1E34 /* main.m in Sources */,
 				DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */,
+				DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */,
+				DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */,
 				FFDA44721BA7BC25009C1E34 /* MessageUITestViewController.m in Sources */,
 				DA6F666C1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m in Sources */,
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,

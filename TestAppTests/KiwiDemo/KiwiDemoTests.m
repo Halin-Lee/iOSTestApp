@@ -68,6 +68,16 @@ describe(@"Kiwi Demo", ^{
             [[[testArray objectAtIndex:0] should] beNil];
         });
         
+        
+        it(@"测试stub withBlock是否成功", ^{
+            [testArray stub:@selector(description) withBlock:^id(NSArray *params) {
+                return @"ABC";
+            }];
+            //注2.当使用mock的时候.调用未stub的方法将导致测试出错,如当开启注1的时候,下面方法将报错
+            [[testArray.description should] equal:@"ABC"];
+            
+        });
+        
     });
     
     
@@ -87,6 +97,21 @@ describe(@"Kiwi Demo", ^{
             //参数捕获在方法之后(那不是废话么)
             [[spy.argument should] equal:theValue(1)];
             
+        });
+    });
+    
+    context(@"Kiwi NSArray测试", ^{
+        it(@"Kiwi NSArray测试", ^{
+            
+            NSMutableArray *testArray = [NSMutableArray nullMock];
+            NSArray *paramArray = @[@"a",@"b",@"c"];
+            NSArray *receiveArray = @[@"a",@"b",@"c"];
+            
+            
+            [[testArray should] receive:@selector(addObjectsFromArray:) withArguments:paramArray];
+            
+            [testArray addObjectsFromArray:receiveArray];
+            //            [[testArray should] receive:@selector(addObjectsFromArray:) withCount:1 arguments:paramArray];
         });
     });
     

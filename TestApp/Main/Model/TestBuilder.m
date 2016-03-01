@@ -10,6 +10,7 @@
 #import "TestItem.h"
 #import "MessageUITestViewController.h"
 #import "DataBindingPlaceHolderViewController.h"
+#import "PPMainViewController.h"
 
 @interface TestBuilder ()
 
@@ -36,6 +37,9 @@
     
     NSString *dataBindingTestGroupName = @"DataBinding测试";
     [self addWithTestGroup:dataBindingTestGroupName name:dataBindingTestGroupName clazz:[DataBindingPlaceHolderViewController class]];
+    
+    NSString *ppTestGroupName = @"ProjectPrestudy";
+    [self addWithTestGroup:ppTestGroupName name:ppTestGroupName clazz:[PPMainViewController class]];
     
 
     return [_testArray copy];

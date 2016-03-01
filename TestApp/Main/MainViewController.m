@@ -64,7 +64,6 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    
     //当前section第一个项目对应的index
     NSInteger localIndex = [_indexArray[section] integerValue];
     if(_indexArray.count - 1 != section){
@@ -84,7 +83,6 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: cellIdentifier];  //根据标识获得cell
     
-    
     if ( ! cell) {
         //cell不存在,构建并初始化cell
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
@@ -103,7 +101,8 @@
     NSInteger row = [self testArrayIndexForIndexPath:indexPath];
     TestItem *testItem = _testArray[row];
     UIViewController *controller = [[testItem.clazz alloc] init];
-    [self presentViewController:controller animated:YES completion:nil];
+//    [self presentViewController:controller animated:YES completion:nil];
+    [self.navigationController pushViewController:controller animated:YES];
     NSLog(@"打开Controller:%@",[controller class]);
 }
 
