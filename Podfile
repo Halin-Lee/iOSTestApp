@@ -7,6 +7,8 @@
 pod 'DataBindingLib'
 pod 'PlaceHolderViewLib'
 
+pod 'JSPatch'
+
 target 'TestApp' do
 
 end

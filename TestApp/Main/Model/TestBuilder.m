@@ -11,6 +11,7 @@
 #import "MessageUITestViewController.h"
 #import "DataBindingPlaceHolderViewController.h"
 #import "PPMainViewController.h"
+#import "JSPatchDemoViewController.h"
 
 @interface TestBuilder ()
 
@@ -41,6 +42,8 @@
     NSString *ppTestGroupName = @"ProjectPrestudy";
     [self addWithTestGroup:ppTestGroupName name:ppTestGroupName clazz:[PPMainViewController class]];
     
+    NSString *jsParchGroupName = @"JSPatch Demo";
+    [self addWithTestGroup:jsParchGroupName name:jsParchGroupName clazz:[JSPatchDemoViewController class]];
 
     return [_testArray copy];
 }

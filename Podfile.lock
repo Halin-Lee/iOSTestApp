@@ -1,15 +1,20 @@
 PODS:
   - DataBindingLib (1.0.0)
+  - JSPatch (0.1.5):
+    - JSPatch/Core (= 0.1.5)
+  - JSPatch/Core (0.1.5)
   - Kiwi (2.4.0)
   - PlaceHolderViewLib (1.0.0)
 
 DEPENDENCIES:
   - DataBindingLib
+  - JSPatch
   - Kiwi
   - PlaceHolderViewLib
 
 SPEC CHECKSUMS:
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
+  JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   PlaceHolderViewLib: 5cfffc3ee0dcbd771ac957b88edeeccd6aeaa4fa
 
