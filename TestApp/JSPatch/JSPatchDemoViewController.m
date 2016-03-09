@@ -16,11 +16,14 @@
 @implementation JSPatchDemoViewController
 
 - (void)viewDidLoad{
-    UIView *view = self.view.subviews.firstObject;
-    UIGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+    [super viewDidLoad];
     
-    [view addGestureRecognizer:gestureRecognizer];
-    view.userInteractionEnabled = YES;
+    NSLog(@"我就干瞪着,什么事都不做");
+//    UIView *view = self.view.subviews.firstObject;
+//    UIGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+//    
+//    [view addGestureRecognizer:gestureRecognizer];
+//    view.userInteractionEnabled = YES;
 }
 //
 - (void)tap{

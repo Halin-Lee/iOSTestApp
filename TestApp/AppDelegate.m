@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "JPEngine.h"
+#import "JPLoader.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +20,24 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     //JSPatch测试,从文件加载JS
     [JPEngine startEngine];
-    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"JSPatchDemo" ofType:@"js"];
-    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
-    [JPEngine evaluateScript:script];
+//    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"JSPatchDemo" ofType:@"js"];
+//    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+//    [JPEngine evaluateScript:script];
+//    
+//    //重复调用,只有最后一次起作用
+//    sourcePath = [[NSBundle mainBundle] pathForResource:@"JSPatchDemo_Second" ofType:@"js"];
+//    script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
+//    [JPEngine evaluateScript:script];
+    
+    [JPLoader  setLogger:^(NSString *log) {
+        NSLog(@"%@",log);
+    }];
+    
+    [JPLoader updateToVersion:1 callback:^(NSError *error) {
+        if (error) {
+            NSLog(@"更新失败 %@",error);
+        }
+    }];
     
     return YES;
 }
