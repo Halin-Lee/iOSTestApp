@@ -18,8 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //JSPatch测试,从文件加载JS
-    [JPEngine startEngine];
+    //JSPatch测试,从本地文件加载JS
+//    [JPEngine startEngine];
 //    NSString *sourcePath = [[NSBundle mainBundle] pathForResource:@"JSPatchDemo" ofType:@"js"];
 //    NSString *script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
 //    [JPEngine evaluateScript:script];
@@ -29,10 +29,14 @@
 //    script = [NSString stringWithContentsOfFile:sourcePath encoding:NSUTF8StringEncoding error:nil];
 //    [JPEngine evaluateScript:script];
     
+    //使用JPLoader完成初始化
+    [JPLoader run];
+    //为Loader设置Logger
     [JPLoader  setLogger:^(NSString *log) {
         NSLog(@"%@",log);
     }];
     
+    //设置JPLoader的版本
     [JPLoader updateToVersion:1 callback:^(NSError *error) {
         if (error) {
             NSLog(@"更新失败 %@",error);
@@ -43,8 +47,7 @@
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+
 }
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {

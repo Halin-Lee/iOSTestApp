@@ -19,13 +19,8 @@
     [super viewDidLoad];
     
     NSLog(@"我就干瞪着,什么事都不做");
-//    UIView *view = self.view.subviews.firstObject;
-//    UIGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-//    
-//    [view addGestureRecognizer:gestureRecognizer];
-//    view.userInteractionEnabled = YES;
+
 }
-//
 - (void)tap{
     
 //    [self.navigationController popViewControllerAnimated:YES];
