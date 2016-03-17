@@ -5,17 +5,32 @@ PODS:
   - JSPatch/Core (0.1.5)
   - Kiwi (2.4.0)
   - PlaceHolderViewLib (1.0.0)
+  - ReactiveCocoa (4.0.1):
+    - ReactiveCocoa/UI (= 4.0.1)
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/Core (4.0.1):
+    - ReactiveCocoa/no-arc
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/no-arc (4.0.1):
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/UI (4.0.1):
+    - ReactiveCocoa/Core
+    - Result (~> 1.0.2)
+  - Result (1.0.2)
 
 DEPENDENCIES:
   - DataBindingLib
   - JSPatch
   - Kiwi
   - PlaceHolderViewLib
+  - ReactiveCocoa
 
 SPEC CHECKSUMS:
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
   JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   PlaceHolderViewLib: 5cfffc3ee0dcbd771ac957b88edeeccd6aeaa4fa
+  ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
 
 COCOAPODS: 0.39.0

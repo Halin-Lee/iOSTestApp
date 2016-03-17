@@ -35,7 +35,6 @@
 
 - (void)setupData{
     
-    
     NSMutableArray *indexArray = [NSMutableArray array];
     NSInteger count = _testArray.count;
     NSString *lastSectionName  = @"";
