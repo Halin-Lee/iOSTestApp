@@ -32,6 +32,9 @@
 		DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */; };
 		DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */; };
 		DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */; };
+		DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA819F991C9A5559007A6C56 /* SlideMenuNavigationController.m */; };
+		DA819FC61C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */; };
+		DA819FC81C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA819FC71C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard */; };
 		DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC291C6495C6008605E1 /* PPMainViewController.m */; };
 		DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */; };
 		DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */; };
@@ -105,6 +108,10 @@
 		DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderTestLabel.xib; sourceTree = "<group>"; };
 		DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
+		DA819F981C9A5559007A6C56 /* SlideMenuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuNavigationController.h; sourceTree = "<group>"; };
+		DA819F991C9A5559007A6C56 /* SlideMenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuNavigationController.m; sourceTree = "<group>"; };
+		DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SlideMenuNavigationController.storyboard; sourceTree = "<group>"; };
+		DA819FC71C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SlideMenuRootViewController.storyboard; sourceTree = "<group>"; };
 		DA86DC281C6495C6008605E1 /* PPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPMainViewController.h; sourceTree = "<group>"; };
 		DA86DC291C6495C6008605E1 /* PPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPMainViewController.m; sourceTree = "<group>"; };
 		DA86DC341C64A390008605E1 /* PPPhoneFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPhoneFileBrowserViewController.h; sourceTree = "<group>"; };
@@ -182,6 +189,10 @@
 				DA2A44A41C85727300CC2F3F /* MenuViewController.m */,
 				DA2A44A51C85727300CC2F3F /* SlideMenuRootViewController.h */,
 				DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */,
+				DA819FC71C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard */,
+				DA819F981C9A5559007A6C56 /* SlideMenuNavigationController.h */,
+				DA819F991C9A5559007A6C56 /* SlideMenuNavigationController.m */,
+				DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */,
 			);
 			path = SlideMenuController;
 			sourceTree = "<group>";
@@ -321,6 +332,13 @@
 			path = JSPatch;
 			sourceTree = "<group>";
 		};
+		DAB5736A1C92CF2D004820D4 /* HLRouter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HLRouter;
+			sourceTree = "<group>";
+		};
 		FFDA44361BA7B658009C1E34 = {
 			isa = PBXGroup;
 			children = (
@@ -344,6 +362,7 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAB5736A1C92CF2D004820D4 /* HLRouter */,
 				DAA591C81C8EC4E9002D5CD4 /* JSPatch */,
 				DA86DC261C647AA5008605E1 /* ProjectPrestudy */,
 				DA6F66591C3E6A250006D8A3 /* DataBinding */,
@@ -494,10 +513,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA819FC81C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard in Resources */,
 				DAA591D41C8ED8EC002D5CD4 /* JSPatchDemo_Second.js in Resources */,
 				DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */,
 				DA59CD5B1C8FC26800DDC91A /* packer.php in Resources */,
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
+				DA819FC61C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard in Resources */,
 				DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */,
 				DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
 				FFDA44531BA7B659009C1E34 /* LaunchScreen.xib in Resources */,
@@ -620,6 +641,7 @@
 				DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */,
 				DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
+				DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */,
 				DA59CD561C8FC26800DDC91A /* mztools.c in Sources */,
 				DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */,
 				DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */,

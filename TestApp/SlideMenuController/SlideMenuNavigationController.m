@@ -6,16 +6,16 @@
 //  Copyright © 2016 17track. All rights reserved.
 //
 
-#import "SlideMenuRootViewController.h"
+#import "SlideMenuNavigationController.h"
 #import "MenuViewController.h"
 
-@interface SlideMenuRootViewController()
+@interface SlideMenuNavigationController()
 
 /**左侧菜单controller*/
 @property (weak, nonatomic) MenuViewController *menuViewController;
 
 /**目前正在展示的viewController*/
-@property (weak, nonatomic) UIViewController *currentViewController;
+@property (weak, nonatomic) UINavigationController *navigationController;
 
 /**保存viewController的字典*/
 @property (nonatomic,strong) NSMutableDictionary *viewControllerDictionary;
@@ -49,7 +49,7 @@
 
 @end
 
-@implementation SlideMenuRootViewController
+@implementation SlideMenuNavigationController
 
 
 - (void)viewDidLoad{
@@ -71,19 +71,21 @@
             //匹配菜单栏,获得菜单栏controller
             _menuViewController = (MenuViewController *)viewController;
         }else if(viewController.view == _mainView.subviews.firstObject){
-            _currentViewController = (UINavigationController *)viewController;
+            _navigationController = (UINavigationController *)viewController;
             //将第一个view的id存入数组,避免两次重构这个view
             
-            //为当前正在显示的viewController添加menu按键
-            _viewControllerDictionary[_currentViewController.restorationIdentifier] = _currentViewController;
             
-            //如果正在显示的ViewController是NavigationViewController,添加Menu按键
-            if ([_currentViewController isKindOfClass:[UINavigationController class]]) {
-                [self setMenuButtonForViewController:(UINavigationController *)_currentViewController];
-            }
+            UIViewController *rootViewController = _navigationController.viewControllers.firstObject;
+            //为当前正在显示的viewController添加menu按键
+            _viewControllerDictionary[rootViewController.restorationIdentifier] = rootViewController;
+            
+            //添加Menu按键
+            [self setMenuButton];
             
         }
     }
+    
+    
 }
 
 
@@ -132,12 +134,8 @@
     }
 }
 
-
-
-
-
 /**为UINavigationController添加Menu按键*/
-- (void)setMenuButtonForViewController:(UINavigationController *)viewController{
+- (void)setMenuButton{
     
     UIView *view = [self customViewForLeftBarButtonItem];
     UITapGestureRecognizer *gestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(menuButtonClick)];
@@ -145,7 +143,7 @@
     view.userInteractionEnabled = YES;
     
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithCustomView:view];
-    viewController.topViewController.navigationItem.leftBarButtonItem = leftBarButton;
+    _navigationController.topViewController.navigationItem.leftBarButtonItem = leftBarButton;
 }
 
 /**获得左侧菜单按键*/
@@ -251,12 +249,12 @@
  
  */
 - (void)setGestureRecognizerToState:(BOOL)state{
-
+    
     if (state) {
         //设置菜单打开时的手势监听
         [_mainView addGestureRecognizer:_closeGestureRecognizer];
         [_mainView addGestureRecognizer:_panGestureRecognizer];
-        [_currentViewController.view removeGestureRecognizer:_mainViewEdgePanGestureRecognizer];
+        [_navigationController.view removeGestureRecognizer:_mainViewEdgePanGestureRecognizer];
         _mainView.subviews.firstObject.userInteractionEnabled = NO;
     }else{
         //设置菜单关闭时的手势监听
@@ -264,17 +262,17 @@
         [_mainView removeGestureRecognizer:_panGestureRecognizer];
         [_mainView.subviews.firstObject addGestureRecognizer:_mainViewEdgePanGestureRecognizer];
         _mainView.subviews.firstObject.userInteractionEnabled = YES;
-    
+        
     }
-
-
+    
+    
 }
 
 /**跳转到viewController*/
 - (void)selectViewControllerWithIdentifier:(NSString *)identifier animated:(BOOL)animated{
     
     UIViewController *viewController = [self viewControllerWithIdentifier:identifier];
-    BOOL needToChangeViewController = viewController != _currentViewController;
+    BOOL needToChangeViewController = viewController != _navigationController;
     
     if (!needToChangeViewController) {
         //不需要更换viewController,直接调用隐藏,返回
@@ -303,29 +301,9 @@
 
 /**将ViewController设置为当前的ViewController*/
 - (void)updateCurrentViewControllerToViewController:(UIViewController *)viewController{
-    //更换ViewController
-    [_currentViewController.view removeFromSuperview];
-    [_currentViewController removeFromParentViewController];
-    _currentViewController = viewController;
-    
-    
-    
-    if ([viewController isKindOfClass:[UINavigationController class]]) {
-        //如果viewController是NavigationController,设置菜单按钮
-        [self setMenuButtonForViewController:(UINavigationController *)viewController];
-    }
-    
-    //将ViewController的view设置得和mainView一样大
-    [_mainView addSubview:_currentViewController.view];
-    _currentViewController.view.translatesAutoresizingMaskIntoConstraints = NO;             //不将自动修改尺寸转换为Constraint
-    NSLayoutAttribute attrs[] = {NSLayoutAttributeHeight,NSLayoutAttributeWidth,NSLayoutAttributeCenterX,NSLayoutAttributeCenterY};
-    for (int index = 0; index < 4; index++) {
-        NSLayoutAttribute attr = attrs[index];
-        NSLayoutConstraint *constraint = [NSLayoutConstraint constraintWithItem: _mainView  attribute:attr relatedBy:NSLayoutRelationEqual toItem:_currentViewController.view        attribute:attr multiplier:1 constant:0];
-        [_mainView addConstraint:constraint];
-    }
-    
-    [self addChildViewController:_currentViewController];
+    [_navigationController setViewControllers:@[viewController]];
+
+    [self setMenuButton];
 }
 
 

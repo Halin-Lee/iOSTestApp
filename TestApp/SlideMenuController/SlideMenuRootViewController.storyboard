@@ -10,7 +10,7 @@
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="NavigationA" storyboardIdentifier="NavigationA" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="1975" y="685"/>
         </scene>
-        <!--Slide Menu Navigation Controller-->
+        <!--Slide Menu Root View Controller-->
         <scene sceneID="Fd8-m2-RZG">
             <objects>
-                <viewController id="bHO-ZN-kYm" customClass="SlideMenuNavigationController" sceneMemberID="viewController">
+                <viewController id="bHO-ZN-kYm" customClass="SlideMenuRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SQf-Dt-AdU"/>
                         <viewControllerLayoutGuide type="bottom" id="tsh-JZ-BeQ"/>
@@ -167,10 +167,26 @@
             </objects>
             <point key="canvasLocation" x="930" y="-166"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wY3-hi-HZk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQp-uc-oMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController restorationIdentifier="NavigationB" storyboardIdentifier="NavigationB" id="xnp-pY-df9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l50-Eb-6u6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DQT-D0-3LO" kind="relationship" relationship="rootViewController" id="pmL-XG-xXr"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="1156" y="1509"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ZVY-L7-kAf">
             <objects>
-                <viewController restorationIdentifier="NavigationB" storyboardIdentifier="NavigationB" id="DQT-D0-3LO" sceneMemberID="viewController">
+                <viewController id="DQT-D0-3LO" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vKl-9C-4Uz"/>
                         <viewControllerLayoutGuide type="bottom" id="Lib-EN-mVk"/>
@@ -202,7 +218,7 @@
         <!--Navigation Controller-->
         <scene sceneID="ShO-bE-vSc">
             <objects>
-                <navigationController id="Muw-Qb-yqh" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="NavigationA" storyboardIdentifier="NavigationA" id="Muw-Qb-yqh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-eO-7jw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
