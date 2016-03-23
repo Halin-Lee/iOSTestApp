@@ -28,4 +28,7 @@
     
 }
 
+- (ViewControllerPresentType)viewControllerPresentType{
+    return ViewControllerPresentTypePush;
+}
 @end

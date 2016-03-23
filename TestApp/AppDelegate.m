@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 #import "SwiftDemo.h"
 #import "JSPatchDemo.h"
+#import "RACDemo.h"
+#import "SlideMenuNavigationController.h"
+#import "Mediator/Mediator.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +23,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 //    [JSPatchDemo test];
-    [SwiftDemo test];
+//    [SwiftDemo test];
+//    [RACDemo test];
     
-    
+    //初始化加载view
+    [((SlideMenuNavigationController *)self.window.rootViewController) view];
+    [[Mediator shareInstance] setupWithRootViewController:((SlideMenuNavigationController *)self.window.rootViewController).childNavigationController];
     return YES;
 }
 

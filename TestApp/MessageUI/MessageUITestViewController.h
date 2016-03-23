@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MessageUITestViewController : UIViewController
+#import "ConfigurableViewControllerDelegate.h"
+@interface MessageUITestViewController : UIViewController<ConfigurableViewControllerDelegate>
 
+
+- (ViewControllerPresentType)viewControllerPresentType;
 @end

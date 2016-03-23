@@ -12,6 +12,7 @@
 #import "DataBindingPlaceHolderViewController.h"
 #import "PPMainViewController.h"
 #import "JSPatchDemoViewController.h"
+#import "MediatorDemoLib.h"
 
 @interface TestBuilder ()
 
@@ -44,7 +45,10 @@
     
     NSString *jsParchGroupName = @"JSPatch Demo";
     [self addWithTestGroup:jsParchGroupName name:jsParchGroupName clazz:[JSPatchDemoViewController class]];
-
+    
+    NSString *mediatorDemoGroupName = @"Mediator Demo";
+    [self addWithTestGroup:mediatorDemoGroupName name:@"Present Demo" clazz:[MediatorDemoPresentViewController class]];
+    [self addWithTestGroup:mediatorDemoGroupName name:@"Push Demo" clazz:[MediatorDemoPushViewController class]];
     return [_testArray copy];
 }
 

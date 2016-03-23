@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ConfigurableViewControllerDelegate.h"
 /**PlaceHolderView与DataBinding联合使用的例子*/
-@interface DataBindingPlaceHolderViewController : UIViewController
-
+@interface DataBindingPlaceHolderViewController : UIViewController<ConfigurableViewControllerDelegate>
+- (ViewControllerPresentType)viewControllerPresentType;
 @end

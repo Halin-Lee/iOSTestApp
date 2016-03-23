@@ -7,12 +7,19 @@
 //
 
 #import "RACDemo.h"
+#import "RACSignalDemo.h"
+#import "RACSubjectDemo.h"
+#import "RACReplaySubjectDemo.h"
+#import "RACSequence_RACTupleDemo.h"
 
 @implementation RACDemo
 
 + (void)test{
+//    [RACSignalDemo test];
+//    [RACSubjectDemo test];
+//    [RACReplaySubjectDemo test];
+    [RACSequence_RACTupleDemo test];
     
-
 }
 
 @end

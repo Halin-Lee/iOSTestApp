@@ -1,8 +1,8 @@
 PODS:
   - DataBindingLib (1.0.0)
-  - JSPatch (0.1.5):
-    - JSPatch/Core (= 0.1.5)
-  - JSPatch/Core (0.1.5)
+  - JSPatch (0.2):
+    - JSPatch/Core (= 0.2)
+  - JSPatch/Core (0.2)
   - Kiwi (2.4.0)
   - PlaceHolderViewLib (1.0.0)
   - ReactiveCocoa (4.0.1):
@@ -27,7 +27,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
-  JSPatch: 405b5f5990643e6717dd6715ac60d6a2b582a6ba
+  JSPatch: 23dcceeec8f8357644f8ef70eb002ef2dbd830de
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   PlaceHolderViewLib: 5cfffc3ee0dcbd771ac957b88edeeccd6aeaa4fa
   ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90

@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+//声明@objc并且继承NSObjec,这个类才可以被ObjC使用
 @objc class ObjectiveCToSwift : NSObject {
     var swiftObj: ObjectiveCToSwift?
     var swiftString:String = ""

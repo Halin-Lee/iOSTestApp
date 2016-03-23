@@ -15,7 +15,7 @@
 @property (weak, nonatomic) MenuViewController *menuViewController;
 
 /**目前正在展示的viewController*/
-@property (weak, nonatomic) UINavigationController *navigationController;
+@property (weak, nonatomic) UINavigationController *childNavigationController;
 
 /**保存viewController的字典*/
 @property (nonatomic,strong) NSMutableDictionary *viewControllerDictionary;
@@ -71,11 +71,11 @@
             //匹配菜单栏,获得菜单栏controller
             _menuViewController = (MenuViewController *)viewController;
         }else if(viewController.view == _mainView.subviews.firstObject){
-            _navigationController = (UINavigationController *)viewController;
+            _childNavigationController = (UINavigationController *)viewController;
             //将第一个view的id存入数组,避免两次重构这个view
             
             
-            UIViewController *rootViewController = _navigationController.viewControllers.firstObject;
+            UIViewController *rootViewController = _childNavigationController.viewControllers.firstObject;
             //为当前正在显示的viewController添加menu按键
             _viewControllerDictionary[rootViewController.restorationIdentifier] = rootViewController;
             
@@ -143,7 +143,7 @@
     view.userInteractionEnabled = YES;
     
     UIBarButtonItem *leftBarButton = [[UIBarButtonItem alloc] initWithCustomView:view];
-    _navigationController.topViewController.navigationItem.leftBarButtonItem = leftBarButton;
+    _childNavigationController.topViewController.navigationItem.leftBarButtonItem = leftBarButton;
 }
 
 /**获得左侧菜单按键*/
@@ -254,7 +254,7 @@
         //设置菜单打开时的手势监听
         [_mainView addGestureRecognizer:_closeGestureRecognizer];
         [_mainView addGestureRecognizer:_panGestureRecognizer];
-        [_navigationController.view removeGestureRecognizer:_mainViewEdgePanGestureRecognizer];
+        [_childNavigationController.view removeGestureRecognizer:_mainViewEdgePanGestureRecognizer];
         _mainView.subviews.firstObject.userInteractionEnabled = NO;
     }else{
         //设置菜单关闭时的手势监听
@@ -272,7 +272,7 @@
 - (void)selectViewControllerWithIdentifier:(NSString *)identifier animated:(BOOL)animated{
     
     UIViewController *viewController = [self viewControllerWithIdentifier:identifier];
-    BOOL needToChangeViewController = viewController != _navigationController;
+    BOOL needToChangeViewController = viewController != _childNavigationController;
     
     if (!needToChangeViewController) {
         //不需要更换viewController,直接调用隐藏,返回
@@ -301,7 +301,7 @@
 
 /**将ViewController设置为当前的ViewController*/
 - (void)updateCurrentViewControllerToViewController:(UIViewController *)viewController{
-    [_navigationController setViewControllers:@[viewController]];
+    [_childNavigationController setViewControllers:@[viewController]];
 
     [self setMenuButton];
 }

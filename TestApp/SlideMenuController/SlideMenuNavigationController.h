@@ -16,7 +16,7 @@
 
 
 /**目前正在展示的viewController*/
-@property (weak, nonatomic ,readonly) UINavigationController *navigationController;
+@property (weak, nonatomic ,readonly) UINavigationController *childNavigationController;
 
 /**选中菜单某项*/
 - (void)selectViewControllerWithIdentifier:(NSString *)identifier animated:(BOOL)animated;

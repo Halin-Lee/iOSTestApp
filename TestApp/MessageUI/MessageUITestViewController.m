@@ -65,4 +65,8 @@
     }
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (ViewControllerPresentType)viewControllerPresentType{
+    return ViewControllerPresentTypePush;
+}
 @end

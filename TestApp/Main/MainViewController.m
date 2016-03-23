@@ -10,6 +10,8 @@
 #import "MessageUITestViewController.h"
 #import "TestItem.h"
 #import "TestBuilder.h"
+#import "Mediator.h"
+#import "ConfigurableViewControllerDelegate.h"
 
 @interface MainViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -99,10 +101,11 @@
     
     NSInteger row = [self testArrayIndexForIndexPath:indexPath];
     TestItem *testItem = _testArray[row];
-    UIViewController *controller = [[testItem.clazz alloc] init];
-//    [self presentViewController:controller animated:YES completion:nil];
-    [self.navigationController pushViewController:controller animated:YES];
-    NSLog(@"打开Controller:%@",[controller class]);
+    UIViewController<ConfigurableViewControllerDelegate> *controller = [[testItem.clazz alloc] init];
+
+    [[Mediator shareInstance] presentViewController:controller withParamDictionary:nil animated:YES];
+
+    NSLog(@"打开Controller:%@",controller );
 }
 
 

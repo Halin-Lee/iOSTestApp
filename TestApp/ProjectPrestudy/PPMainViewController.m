@@ -41,6 +41,8 @@
     // Dispose of any resources that can be recreated.
 }
 
-
+- (ViewControllerPresentType)viewControllerPresentType{
+    return ViewControllerPresentTypePush;
+}
 
 @end

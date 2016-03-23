@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConfigurableViewControllerDelegate.h"
 
-@interface JSPatchDemoViewController : UIViewController
-
+@interface JSPatchDemoViewController : UIViewController<ConfigurableViewControllerDelegate>
+- (ViewControllerPresentType)viewControllerPresentType;
 @end

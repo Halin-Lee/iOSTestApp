@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConfigurableViewControllerDelegate.h"
 
-@interface PPMainViewController : UITabBarController
-
+@interface PPMainViewController : UITabBarController<ConfigurableViewControllerDelegate>
+- (ViewControllerPresentType)viewControllerPresentType;
 @end
