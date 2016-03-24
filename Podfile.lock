@@ -3,6 +3,11 @@ PODS:
   - JSPatch (0.2):
     - JSPatch/Core (= 0.2)
   - JSPatch/Core (0.2)
+  - KissXML (5.0.3):
+    - KissXML/Standard (= 5.0.3)
+  - KissXML/Core (5.0.3)
+  - KissXML/Standard (5.0.3):
+    - KissXML/Core
   - Kiwi (2.4.0)
   - PlaceHolderViewLib (1.0.0)
   - ReactiveCocoa (4.0.1):
@@ -21,6 +26,7 @@ PODS:
 DEPENDENCIES:
   - DataBindingLib
   - JSPatch
+  - KissXML
   - Kiwi
   - PlaceHolderViewLib
   - ReactiveCocoa
@@ -28,6 +34,7 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
   JSPatch: 23dcceeec8f8357644f8ef70eb002ef2dbd830de
+  KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   PlaceHolderViewLib: 5cfffc3ee0dcbd771ac957b88edeeccd6aeaa4fa
   ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90

@@ -11,6 +11,8 @@ pod 'JSPatch'
 
 pod 'ReactiveCocoa'
 
+pod 'KissXML'
+
 target 'TestApp' do
 
 end
