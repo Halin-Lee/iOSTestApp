@@ -111,6 +111,9 @@
                 break;
             }
         }
+        if (canPopToViewController) {
+            break;
+        }
     }
     
     
@@ -122,21 +125,24 @@
     //能回退,回退
 
     //先回退navigation
-    UINavigationController *dismissNav;
+    BOOL needPop = NO;
     while (_navigationStack.lastObject != popNav) {
-        dismissNav = _navigationStack.lastObject;
+        needPop = YES;
         [_navigationStack removeLastObject];
     }
-    [dismissNav dismissViewControllerAnimated:NO completion:nil];
+    if (needPop) {
+        [popNav dismissViewControllerAnimated:NO completion:nil];
+    }
     
     
     //pop,修改Navigation的ViewControllers,将需要pop走的ViewController移除
-    NSMutableArray<UIViewController *> *viewControllers = [NSMutableArray array];
-    for (UIViewController *viewController in _navigationStack.lastObject.viewControllers) {
-        [viewControllers addObject:viewController];
+    UINavigationController *lastNav = _navigationStack.lastObject;
+    NSMutableArray<UIViewController *> *viewControllers = [lastNav.viewControllers mutableCopy];
+    for (UIViewController *viewController in viewControllers.reverseObjectEnumerator) {
         if (viewController.class == viewControllerClass) {
             break;
         }
+        [viewControllers removeObject:viewController];
     }
     _navigationStack.lastObject.viewControllers = viewControllers;
     return YES;
