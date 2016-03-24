@@ -2,23 +2,19 @@
 //  GolbalConfiguration.m
 //  Pods
 //
-//  Created by 17track on 3/18/16.
+//  Created by Halin on 3/18/16.
 //
 //
 
 #import "GolbalConfiguration.h"
+#import "Logger.h"
+
 
 @implementation GolbalConfiguration
 
-+ (instancetype)shareInstance{
-    static GolbalConfiguration *shareInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        shareInstance = [[self alloc] init];
-    });
-    return shareInstance;
-}
 
+
+SINGLETON_FOR_CLASS(GolbalConfiguration)
 
 - (instancetype)init
 {
@@ -30,11 +26,6 @@
     }
     return self;
 }
-
-
-
-
-
 
 
 

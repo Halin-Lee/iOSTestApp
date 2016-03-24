@@ -103,7 +103,7 @@
     TestItem *testItem = _testArray[row];
     UIViewController<ConfigurableViewControllerDelegate> *controller = [[testItem.clazz alloc] init];
 
-    [[Mediator shareInstance] presentViewController:controller withParamDictionary:nil animated:YES];
+    [[Mediator sharedSingleton] presentViewController:controller withParamDictionary:nil animated:YES];
 
     NSLog(@"打开Controller:%@",controller );
 }

@@ -2,7 +2,7 @@
 //  MediatorDemoPresentViewController.m
 //  TestApp
 //
-//  Created by 17track on 3/23/16.
+//  Created by Halin on 3/23/16.
 //  Copyright © 2016 me.halin. All rights reserved.
 //
 
@@ -43,34 +43,34 @@
 }
 
 - (void)popToRoot{
-    [[Mediator shareInstance] popToViewController:NSClassFromString(@"MainViewController")];
+    [[Mediator sharedSingleton] popToViewController:NSClassFromString(@"MainViewController")];
 }
 
 - (void)pop{
-    [[Mediator shareInstance] popWithParam:nil animated:YES];
+    [[Mediator sharedSingleton] popWithParam:nil animated:YES];
 }
 
 - (void)push{
     UIViewController<ConfigurableViewControllerDelegate> *viewController = [[MediatorDemoPushViewController alloc] init];
     NSDictionary *param = @{@"from Controller":NSStringFromClass([self class])} ;
-    [[Mediator shareInstance] presentViewController:viewController withParamDictionary:param animated:YES];
+    [[Mediator sharedSingleton] presentViewController:viewController withParamDictionary:param animated:YES];
 }
 
 
 - (void)present{
     UIViewController<ConfigurableViewControllerDelegate> *viewController = [[MediatorDemoPresentViewController alloc] init];
     NSDictionary *param = @{@"from Controller":NSStringFromClass([self class])} ;
-    [[Mediator shareInstance] presentViewController:viewController withParamDictionary:param animated:YES];
+    [[Mediator sharedSingleton] presentViewController:viewController withParamDictionary:param animated:YES];
 }
 
 
 - (void)popToPush{
-    [[Mediator shareInstance] popToViewController:NSClassFromString(@"MediatorDemoPushViewController")];
+    [[Mediator sharedSingleton] popToViewController:NSClassFromString(@"MediatorDemoPushViewController")];
 }
 
 
 - (void)popToPresent{
-    [[Mediator shareInstance] popToViewController:NSClassFromString(@"MediatorDemoPresentViewController")];
+    [[Mediator sharedSingleton] popToViewController:NSClassFromString(@"MediatorDemoPresentViewController")];
 }
 
 

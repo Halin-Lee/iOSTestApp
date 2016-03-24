@@ -28,7 +28,7 @@
     
     //初始化加载view
     [((SlideMenuNavigationController *)self.window.rootViewController) view];
-    [[Mediator shareInstance] setupWithRootViewController:((SlideMenuNavigationController *)self.window.rootViewController).childNavigationController];
+    [[Mediator sharedSingleton] setupWithRootViewController:((SlideMenuNavigationController *)self.window.rootViewController).childNavigationController];
     return YES;
 }
 

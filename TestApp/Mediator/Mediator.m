@@ -2,7 +2,7 @@
 //  Mediator.m
 //  TestApp
 //
-//  Created by 17track on 3/22/16.
+//  Created by Halin on 3/22/16.
 //  Copyright © 2016 me.halin. All rights reserved.
 //
 
@@ -17,7 +17,7 @@
 @implementation Mediator
 
 
-+ (instancetype)shareInstance{
++ (instancetype)sharedSingleton{
     static Mediator *shareInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -36,6 +36,15 @@
     
     _navigationStack = [NSMutableArray array];
     [_navigationStack addObject:rootController];
+}
+
+
+- (void)presentViewControllerClass:(Class)viewControllerClass withParamDictionary:(NSDictionary *)dictionary animated:(BOOL)animated{
+    UIViewController<ConfigurableViewControllerDelegate> *viewController = [[viewControllerClass alloc] init];
+    
+    if (viewController) {
+        [self presentViewController:viewController withParamDictionary:dictionary animated:animated];
+    }
 }
 
 //使用delegate的方式,1.无法统一URL打开与页面跳转 2.页面耦合严重,每一个页面都依赖于与他相关的所有页面

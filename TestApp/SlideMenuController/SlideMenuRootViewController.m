@@ -2,8 +2,8 @@
 //  SlideMenuRootViewController.m
 //  Demo
 //
-//  Created by 17track on 2/26/16.
-//  Copyright © 2016 17track. All rights reserved.
+//  Created by Halin on 2/26/16.
+//  Copyright © 2016 Halin. All rights reserved.
 //
 
 #import "SlideMenuRootViewController.h"

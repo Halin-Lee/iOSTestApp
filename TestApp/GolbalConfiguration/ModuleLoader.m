@@ -2,12 +2,13 @@
 //  ModuleLoader.m
 //  Pods
 //
-//  Created by 17track on 3/18/16.
+//  Created by Halin on 3/18/16.
 //
 //
 
 #import "ModuleLoader.h"
 #import "DDXML.h"
+#import "Logger.h"
 #import "GolbalConfiguration.h"
 #import "InitializableProtocol.h"
 
@@ -28,14 +29,8 @@ static NSString *const TAG = @"Configuration";
 
 @implementation ModuleLoader
 
-+ (instancetype)shareInstance{
-    static ModuleLoader *shareInstance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        shareInstance = [[self alloc] init];
-    });
-    return shareInstance;
-}
+SINGLETON_FOR_CLASS(ModuleLoader)
+
 - (instancetype)init
 {
     self = [super init];
@@ -55,16 +50,16 @@ static NSString *const TAG = @"Configuration";
     NSError *error;
     DDXMLDocument *doc = [[DDXMLDocument alloc] initWithData:configData options:0 error:&error];
     if (error) {
-        NSLog(@"默认配置文件解析失败 Error:%@",error);
+        [Logger logEWithTag:TAG format:@"默认配置文件解析失败 Error:%@",error];
     }
     DDXMLElement *environmentElement = [doc rootElement];
     
     //解析Golbal配置
     NSArray *golbals = [environmentElement elementsForName:@"Golbal"];
     if (golbals.count > 1|| golbals.count == 0) {
-        NSLog(@"Golbal 数量异常 %ld",golbals.count);
+        [Logger logEWithTag:TAG format:@"Golbal 数量异常 %ld",golbals.count];
     }
-    GolbalConfiguration *golbalConfiguration = [GolbalConfiguration shareInstance];
+    GolbalConfiguration *golbalConfiguration = [GolbalConfiguration sharedSingleton];
     [self parserElement:golbals.firstObject toObject:golbalConfiguration];
 
     
@@ -73,7 +68,7 @@ static NSString *const TAG = @"Configuration";
         Class class = NSClassFromString(moduleName);
         id<ConfigurableProtocol> module = [[class alloc] initWithDefaultValue];
         if(!module){
-            NSLog(@"找不到指定Module %@",moduleName);
+            [Logger logEWithTag:TAG format:@"找不到指定Module %@",moduleName];
         }
         _configDictionary[moduleName] = module;
         return module;
@@ -87,7 +82,7 @@ static NSString *const TAG = @"Configuration";
         NSData *localFileData = [NSData dataWithContentsOfFile:_configurationFilePath];
         doc = [[DDXMLDocument alloc] initWithData:localFileData options:0 error:&error];
         if (error) {
-            NSLog(@"本地配置文件解析失败 Error:%@",error);
+            [Logger logEWithTag:TAG format:@"本地配置文件解析失败 Error:%@",error];
             //加载失败,删除文件
             [fileManager removeItemAtPath:_configurationFilePath error:nil];
         }
@@ -114,7 +109,7 @@ static NSString *const TAG = @"Configuration";
     NSError *error;
     DDXMLDocument *doc = [[DDXMLDocument alloc] initWithData:xmlData options:0 error:&error];
     if (error) {
-        NSLog(@"配置文件解析失败 Error:%@",error);
+        [Logger logEWithTag:TAG format:@"配置文件解析失败 Error:%@",error];
     }
     [_configDictionary removeAllObjects];
     DDXMLElement *environmentElement = [doc rootElement];
@@ -122,7 +117,7 @@ static NSString *const TAG = @"Configuration";
         Class class = NSClassFromString(moduleName);
         id<ConfigurableProtocol> module = [[class alloc] initWithDefaultValue];
         if(!module){
-            NSLog(@"找不到指定Module %@",moduleName);
+            [Logger logEWithTag:TAG format:@"找不到指定Module %@",moduleName];
         }
         _configDictionary[moduleName] = module;
         return module;
@@ -132,7 +127,7 @@ static NSString *const TAG = @"Configuration";
     //解析传入的data
     doc = [[DDXMLDocument alloc] initWithData:xmlData options:0 error:&error];
     if (error) {
-        NSLog(@"配置文件解析失败 Error:%@",error);
+        [Logger logEWithTag:TAG format:@"配置文件解析失败 Error:%@",error];
         return NO;
     }
     
@@ -200,7 +195,7 @@ static NSString *const TAG = @"Configuration";
     
     id<ConfigurableProtocol> output = _configDictionary[NSStringFromClass(clazz)];
     if (!output) {
-        NSLog(@"找不到配置参数 %@",clazz);
+        [Logger logEWithTag:TAG format:@"找不到配置参数 %@",clazz];
     }
     
     return output;

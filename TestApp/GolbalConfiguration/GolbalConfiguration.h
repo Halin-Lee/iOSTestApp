@@ -2,17 +2,18 @@
 //  GolbalConfiguration.h
 //  Pods
 //
-//  Created by 17track on 3/18/16.
+//  Created by Halin on 3/18/16.
 //
 //
 
 #import <Foundation/Foundation.h>
 #import "ConfigurableProtocol.h"
+#import "Singleton.h"
 
 /**全局配置,可从xml加载,readonly的是不可配置项*/
 @interface GolbalConfiguration : NSObject 
 
-+ (instancetype)shareInstance;
+SINGLETON_FOR_HEADER(GolbalConfiguration)
 
 @property (nonatomic,copy) NSString *appGroupID;
 

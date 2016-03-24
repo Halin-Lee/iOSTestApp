@@ -13,6 +13,7 @@
 #import "PPMainViewController.h"
 #import "JSPatchDemoViewController.h"
 #import "MediatorDemoLib.h"
+#import "RouterFirstDemoViewController.h"
 
 @interface TestBuilder ()
 
@@ -49,6 +50,12 @@
     NSString *mediatorDemoGroupName = @"Mediator Demo";
     [self addWithTestGroup:mediatorDemoGroupName name:@"Present Demo" clazz:[MediatorDemoPresentViewController class]];
     [self addWithTestGroup:mediatorDemoGroupName name:@"Push Demo" clazz:[MediatorDemoPushViewController class]];
+    
+    
+    NSString *routerGroupName = @"Router Demo";
+    [self addWithTestGroup:routerGroupName name:routerGroupName clazz:[RouterFirstDemoViewController class]];
+    
+    
     return [_testArray copy];
 }
 
