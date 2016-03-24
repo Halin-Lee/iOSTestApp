@@ -67,6 +67,10 @@
             break;
     }
     
+
+    //某些动画可能导致主线程睡眠(比如cell点击动画),所以这里要主动唤醒主线程
+    //http://stackoverflow.com/questions/21075540/presentviewcontrolleranimatedyes-view-will-not-appear-until-user-taps-again
+    CFRunLoopWakeUp(CFRunLoopGetCurrent());
 }
 
 - (void)popWithParam:(NSDictionary *)param animated:(BOOL)animated{
@@ -116,13 +120,17 @@
     }
     
     //能回退,回退
+
     //先回退navigation
+    UINavigationController *dismissNav;
     while (_navigationStack.lastObject != popNav) {
+        dismissNav = _navigationStack.lastObject;
         [_navigationStack removeLastObject];
     }
-    [_navigationStack.lastObject dismissViewControllerAnimated:NO completion:nil];
+    [dismissNav dismissViewControllerAnimated:NO completion:nil];
     
-    //pop
+    
+    //pop,修改Navigation的ViewControllers,将需要pop走的ViewController移除
     NSMutableArray<UIViewController *> *viewControllers = [NSMutableArray array];
     for (UIViewController *viewController in _navigationStack.lastObject.viewControllers) {
         [viewControllers addObject:viewController];
@@ -130,7 +138,7 @@
             break;
         }
     }
-    _navigationStack.lastObject.viewControllers =viewControllers;
+    _navigationStack.lastObject.viewControllers = viewControllers;
     return YES;
 }
 
