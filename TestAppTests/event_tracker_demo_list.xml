@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AutoEventTracker>
+
+    <!-- 页面
+    @name 可选,页面名称
+    @class 对应的类
+    -->
+    <Screen
+        name="测试页"
+        iOSClass="AutoEventTrackingDemoViewController">
+
+        <!-- 项目
+        @name 可选,事件名称
+        @id 对应的view id
+        @type 事件类型(tap,long press,scroll,)
+        @parent 可选,包含的对应父类
+        @ignored 可选,是否忽略该事件
+        @tag 可选,标签,用于区分item
+        -->
+
+        <item
+            name="事件名称2"
+            iOSID="auto_event_tracking_demo_view_with_click_event"
+            type="tap" />
+
+        <item
+            name="文本点击"
+            iOSID="auto_event_tracking_demo_view_with_click_event"
+            type="tap" />
+
+        <item
+            name="文本长按"
+            iOSID="auto_event_tracking_demo_view_with_click_event"
+            type="long press" />
+
+        <item
+            name="ViewPager滑动"
+            iOSID="auto_event_tracking_demo_view_pager"
+            type="scroll" />
+
+        <item
+            name="第0个直接子类点击"
+            iOSID="direct_child"
+            iOSParent="10000"
+            type="tap" />
+
+        <item
+            name="第0个间接子类点击"
+            iOSID="indirect_child"
+            iOSParent="10000"
+            type="tap" />
+
+        <item
+            name="第1个直接子类点击"
+            iOSID="direct_child"
+            iOSParent="10001"
+            type="tap" />
+
+        <item
+            name="第1个间接子类点击"
+            iOSID="indirect_child"
+            iOSParent="10001"
+            type="tap" />
+
+
+    </Screen>
+
+    <!-- 页面
+    @name 页面名称
+    @class 对应的类
+    -->
+    <Screen
+        name="Fragment测试页"
+        iOSClass="me.halin.testapp.AutoEventTracking.Demo.AutoEventTrackingFragmentDemoActivity">
+
+        <!-- 项目
+        @name 事件名称
+        @id 对应的view id
+        @type 事件类型(tap,long press,scroll,)
+        @parent 包含的对应父类
+        -->
+
+
+        <item
+            name="第0个直接子类点击"
+            iOSID="direct_child"
+            tag="add page index"
+            type="tap" />
+
+        <item
+            name="第0个间接子类点击"
+            iOSID="indirect_child"
+            tag="add page index"
+            type="tap" />
+
+        <!-- 不上报ViewPager点击事件-->
+        <item
+            name="ViewPager点击"
+            iOSID="auto_event_tracking_demo_view_pager"
+            ignored="true"
+            type="tap" />
+    </Screen>
+
+
+</AutoEventTracker>

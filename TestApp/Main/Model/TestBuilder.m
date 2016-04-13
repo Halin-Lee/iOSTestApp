@@ -14,6 +14,7 @@
 #import "JSPatchDemoViewController.h"
 #import "MediatorDemoLib.h"
 #import "RouterFirstDemoViewController.h"
+#import "AutoEventTrackingDemoViewController.h"
 
 @interface TestBuilder ()
 
@@ -55,6 +56,10 @@
     NSString *routerGroupName = @"Router Demo";
     [self addWithTestGroup:routerGroupName name:routerGroupName clazz:[RouterFirstDemoViewController class]];
     
+    
+    
+    NSString *autoEventTrackingGroupName = @"Auto Event Tracking Demo";
+    [self addWithTestGroup:autoEventTrackingGroupName name:autoEventTrackingGroupName clazz:[AutoEventTrackingDemoViewController class]];
     
     return [_testArray copy];
 }

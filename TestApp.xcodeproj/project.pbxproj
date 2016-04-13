@@ -12,6 +12,7 @@
 		DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A41C85727300CC2F3F /* MenuViewController.m */; };
 		DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */; };
 		DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */; };
+		DA39CA171CBB8D5500E14414 /* AutoEventTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */; };
 		DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD421C8FC26800DDC91A /* JPLoader.m */; };
 		DA59CD551C8FC26800DDC91A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD461C8FC26800DDC91A /* ioapi.c */; };
 		DA59CD561C8FC26800DDC91A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD481C8FC26800DDC91A /* mztools.c */; };
@@ -32,6 +33,11 @@
 		DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */; };
 		DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */; };
 		DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */; };
+		DA779AE51CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA779ADF1CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m */; };
+		DA779AE61CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AE01CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib */; };
+		DA779AE71CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AE11CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib */; };
+		DA779AE81CBE499A00373B73 /* AutoEventTrackingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA779AE31CBE499A00373B73 /* AutoEventTrackingDemoViewController.m */; };
+		DA779AE91CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AE41CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib */; };
 		DA7878C91CA3B500004F4483 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878C61CA3B500004F4483 /* Router.m */; };
 		DA7878CA1CA3B500004F4483 /* RouterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878C81CA3B500004F4483 /* RouterConfiguration.m */; };
 		DA7878E11CA3B538004F4483 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878D81CA3B538004F4483 /* Logger.m */; };
@@ -59,6 +65,13 @@
 		DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC291C6495C6008605E1 /* PPMainViewController.m */; };
 		DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */; };
 		DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */; };
+		DA8D27C21CBBC24D0033F09F /* UIView+AutoEventTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */; };
+		DA8D27C81CBC94B20033F09F /* AutoEventTrackingXMLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */; };
+		DA8D27CA1CBCC1230033F09F /* event_tracker_demo_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA8D27C91CBCC1230033F09F /* event_tracker_demo_list.xml */; };
+		DA8D27CD1CBCC76F0033F09F /* TrackEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */; };
+		DA8D27CF1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27CE1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m */; };
+		DA8D27D11CBCD26A0033F09F /* event_tracker_demo_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA8D27D01CBCD26A0033F09F /* event_tracker_demo_list.xml */; };
+		DA8D27D81CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */; };
 		DAA591CE1C8EC555002D5CD4 /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA591CD1C8EC555002D5CD4 /* JSPatchDemoViewController.m */; };
 		DAA591D01C8EC5BC002D5CD4 /* JSPatchDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA591CF1C8EC5BC002D5CD4 /* JSPatchDemoView.xib */; };
 		DAA591D21C8EC703002D5CD4 /* JSPatchDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = DAA591D11C8EC703002D5CD4 /* JSPatchDemo.js */; };
@@ -101,6 +114,8 @@
 		DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuRootViewController.m; sourceTree = "<group>"; };
 		DA2A44A91C8572F100CC2F3F /* LeftSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideViewController.h; sourceTree = "<group>"; };
 		DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideViewController.m; sourceTree = "<group>"; };
+		DA39CA151CBB8D5500E14414 /* AutoEventTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTracking.h; sourceTree = "<group>"; };
+		DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTracking.m; sourceTree = "<group>"; };
 		DA59CD411C8FC26800DDC91A /* JPLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoader.h; sourceTree = "<group>"; };
 		DA59CD421C8FC26800DDC91A /* JPLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLoader.m; sourceTree = "<group>"; };
 		DA59CD451C8FC26800DDC91A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
@@ -135,6 +150,13 @@
 		DA6F66661C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DataBindingPlaceHolderTestLabel.xib; sourceTree = "<group>"; };
 		DA6F666E1C3E6E2D0006D8A3 /* TestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestView.xib; sourceTree = "<group>"; };
 		DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KiwiDemoTests.m; sourceTree = "<group>"; };
+		DA779ADE1CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingDemoTableViewCell.h; sourceTree = "<group>"; };
+		DA779ADF1CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingDemoTableViewCell.m; sourceTree = "<group>"; };
+		DA779AE01CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoEventTrackingDemoTableViewCell.xib; sourceTree = "<group>"; };
+		DA779AE11CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoEventTrackingDemoTableViewCellSubview.xib; sourceTree = "<group>"; };
+		DA779AE21CBE499A00373B73 /* AutoEventTrackingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingDemoViewController.h; sourceTree = "<group>"; };
+		DA779AE31CBE499A00373B73 /* AutoEventTrackingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingDemoViewController.m; sourceTree = "<group>"; };
+		DA779AE41CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoEventTrackingDemoViewController.xib; sourceTree = "<group>"; };
 		DA7878C31CA3B4BF004F4483 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		DA7878C51CA3B500004F4483 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		DA7878C61CA3B500004F4483 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
@@ -196,6 +218,18 @@
 		DA86DC341C64A390008605E1 /* PPPhoneFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPhoneFileBrowserViewController.h; sourceTree = "<group>"; };
 		DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPhoneFileBrowserViewController.m; sourceTree = "<group>"; };
 		DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPPhoneFileBrowserViewController.xib; sourceTree = "<group>"; };
+		DA8D27C01CBBC24D0033F09F /* UIView+AutoEventTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoEventTracking.h"; sourceTree = "<group>"; };
+		DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoEventTracking.m"; sourceTree = "<group>"; };
+		DA8D27C61CBC94B20033F09F /* AutoEventTrackingXMLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingXMLLoader.h; sourceTree = "<group>"; };
+		DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingXMLLoader.m; sourceTree = "<group>"; };
+		DA8D27C91CBCC1230033F09F /* event_tracker_demo_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = event_tracker_demo_list.xml; sourceTree = "<group>"; };
+		DA8D27CB1CBCC76F0033F09F /* TrackEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackEventItem.h; sourceTree = "<group>"; };
+		DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackEventItem.m; sourceTree = "<group>"; };
+		DA8D27CE1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingXMLLoaderTests.m; sourceTree = "<group>"; };
+		DA8D27D01CBCD26A0033F09F /* event_tracker_demo_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = event_tracker_demo_list.xml; sourceTree = "<group>"; };
+		DA8D27D51CBCD4760033F09F /* AutoEventTrackingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingDelegate.h; sourceTree = "<group>"; };
+		DA8D27D61CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultAutoEventTrackingDelegate.h; sourceTree = "<group>"; };
+		DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultAutoEventTrackingDelegate.m; sourceTree = "<group>"; };
 		DAA591CC1C8EC555002D5CD4 /* JSPatchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchDemoViewController.h; sourceTree = "<group>"; };
 		DAA591CD1C8EC555002D5CD4 /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		DAA591CF1C8EC5BC002D5CD4 /* JSPatchDemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSPatchDemoView.xib; sourceTree = "<group>"; };
@@ -291,6 +325,34 @@
 				DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */,
 			);
 			path = SlideMenuController;
+			sourceTree = "<group>";
+		};
+		DA39CA141CBB8CC100E14414 /* AutoEventTracking */ = {
+			isa = PBXGroup;
+			children = (
+				DA39CA181CBB8D9D00E14414 /* Demo */,
+				DA39CA151CBB8D5500E14414 /* AutoEventTracking.h */,
+				DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */,
+				DA8D27C01CBBC24D0033F09F /* UIView+AutoEventTracking.h */,
+				DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */,
+				DA8D27C61CBC94B20033F09F /* AutoEventTrackingXMLLoader.h */,
+				DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */,
+				DA8D27CB1CBCC76F0033F09F /* TrackEventItem.h */,
+				DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */,
+				DA8D27D51CBCD4760033F09F /* AutoEventTrackingDelegate.h */,
+				DA8D27D61CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.h */,
+				DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */,
+			);
+			path = AutoEventTracking;
+			sourceTree = "<group>";
+		};
+		DA39CA181CBB8D9D00E14414 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DA779ADD1CBE499900373B73 /* AutoEventTrackingDemo */,
+				DA8D27C91CBCC1230033F09F /* event_tracker_demo_list.xml */,
+			);
+			path = Demo;
 			sourceTree = "<group>";
 		};
 		DA59CD401C8FC26800DDC91A /* Loader */ = {
@@ -392,6 +454,20 @@
 				DA6F66711C3E6FBA0006D8A3 /* KiwiDemoTests.m */,
 			);
 			path = KiwiDemo;
+			sourceTree = "<group>";
+		};
+		DA779ADD1CBE499900373B73 /* AutoEventTrackingDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DA779AE21CBE499A00373B73 /* AutoEventTrackingDemoViewController.h */,
+				DA779AE31CBE499A00373B73 /* AutoEventTrackingDemoViewController.m */,
+				DA779AE41CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib */,
+				DA779ADE1CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.h */,
+				DA779ADF1CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m */,
+				DA779AE01CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib */,
+				DA779AE11CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib */,
+			);
+			path = AutoEventTrackingDemo;
 			sourceTree = "<group>";
 		};
 		DA7878C21CA3B4BF004F4483 /* Utils */ = {
@@ -540,6 +616,13 @@
 			path = JSPatch;
 			sourceTree = "<group>";
 		};
+		DAAFA5721CBA336D00A80E10 /* IM */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IM;
+			sourceTree = "<group>";
+		};
 		DAB773481CA39CE900411FC1 /* GolbalConfiguration */ = {
 			isa = PBXGroup;
 			children = (
@@ -601,6 +684,8 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA39CA141CBB8CC100E14414 /* AutoEventTracking */,
+				DAAFA5721CBA336D00A80E10 /* IM */,
 				DA7878C41CA3B500004F4483 /* Router */,
 				DA7878C21CA3B4BF004F4483 /* Utils */,
 				DAB773481CA39CE900411FC1 /* GolbalConfiguration */,
@@ -637,7 +722,9 @@
 			children = (
 				DA6F66701C3E6F9B0006D8A3 /* KiwiDemo */,
 				FFDA445E1BA7B659009C1E34 /* TestAppTests.m */,
+				DA8D27D01CBCD26A0033F09F /* event_tracker_demo_list.xml */,
 				FFDA445C1BA7B659009C1E34 /* Supporting Files */,
+				DA8D27CE1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m */,
 			);
 			path = TestAppTests;
 			sourceTree = "<group>";
@@ -722,7 +809,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = me.halin;
 				TargetAttributes = {
 					FFDA443E1BA7B658009C1E34 = {
@@ -763,7 +850,11 @@
 				DA819FC81C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard in Resources */,
 				DAA591D41C8ED8EC002D5CD4 /* JSPatchDemo_Second.js in Resources */,
 				DAC99CA21CA23B1B00FB436D /* MediatorDemoPushView.xib in Resources */,
+				DA779AE91CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib in Resources */,
+				DA779AE61CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib in Resources */,
+				DA8D27CA1CBCC1230033F09F /* event_tracker_demo_list.xml in Resources */,
 				DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */,
+				DA779AE71CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib in Resources */,
 				DA59CD5B1C8FC26800DDC91A /* packer.php in Resources */,
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
 				DA819FC61C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard in Resources */,
@@ -783,6 +874,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA8D27D11CBCD26A0033F09F /* event_tracker_demo_list.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,25 +983,30 @@
 				DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */,
 				DA819FF41C9A9971007A6C56 /* RACDemo.m in Sources */,
 				DA7878E41CA3B538004F4483 /* LogUtilTestIn.m in Sources */,
+				DA779AE51CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m in Sources */,
 				DA7878C91CA3B500004F4483 /* Router.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
 				DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */,
 				DA59CD561C8FC26800DDC91A /* mztools.c in Sources */,
 				DA819FF71C9AA89B007A6C56 /* RACSignalDemo.m in Sources */,
 				DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */,
+				DA8D27C21CBBC24D0033F09F /* UIView+AutoEventTracking.m in Sources */,
 				DA7878FC1CA3C9FA004F4483 /* RouterFirstDemoViewController.m in Sources */,
 				DAB773501CA39CE900411FC1 /* ModuleLoader.m in Sources */,
 				DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */,
 				DAC99C9B1CA1528C00FB436D /* Mediator.m in Sources */,
 				DA819FEE1C9A9461007A6C56 /* SwiftDemo.m in Sources */,
 				DA819FF11C9A9911007A6C56 /* JSPatchDemo.m in Sources */,
+				DA779AE81CBE499A00373B73 /* AutoEventTrackingDemoViewController.m in Sources */,
 				DA81A0061C9B96FA007A6C56 /* RACSequence_RACTupleDemo.m in Sources */,
 				DA59CD571C8FC26800DDC91A /* unzip.c in Sources */,
+				DA8D27D81CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m in Sources */,
 				DA7878EE1CA3B8F4004F4483 /* ViewControllerRegister.m in Sources */,
 				DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */,
 				DAC99CA01CA23A4300FB436D /* MediatorDemoPushViewController.m in Sources */,
 				DA7879011CA3CA0A004F4483 /* RouterSecondDemoViewController.m in Sources */,
 				DA7878E11CA3B538004F4483 /* Logger.m in Sources */,
+				DA8D27CD1CBCC76F0033F09F /* TrackEventItem.m in Sources */,
 				DA59CD551C8FC26800DDC91A /* ioapi.c in Sources */,
 				DA7878CA1CA3B500004F4483 /* RouterConfiguration.m in Sources */,
 				DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */,
@@ -928,10 +1025,12 @@
 				DA819FE41C9A8AAE007A6C56 /* HelloWorld.swift in Sources */,
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,
 				DA59CD581C8FC26800DDC91A /* zip.c in Sources */,
+				DA39CA171CBB8D5500E14414 /* AutoEventTracking.m in Sources */,
 				DA81A0001C9AB8EB007A6C56 /* RACReplaySubjectDemo.m in Sources */,
 				DA7878E21CA3B538004F4483 /* LoggerConfiguration.m in Sources */,
 				DA819FEA1C9A8DFD007A6C56 /* SwiftToObjectiveC.m in Sources */,
 				DA6F666A1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m in Sources */,
+				DA8D27C81CBC94B20033F09F /* AutoEventTrackingXMLLoader.m in Sources */,
 				DA6F66571C3E6A050006D8A3 /* TestBuilder.m in Sources */,
 				DA7878E71CA3B673004F4483 /* NSString+Addition.m in Sources */,
 			);
@@ -943,6 +1042,7 @@
 			files = (
 				DA6F66721C3E6FBA0006D8A3 /* KiwiDemoTests.m in Sources */,
 				FFDA445F1BA7B659009C1E34 /* TestAppTests.m in Sources */,
+				DA8D27CF1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,6 +1096,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -1064,6 +1165,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.halin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Swift/Bridge/TestApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1080,6 +1182,7 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = TestApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.halin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "TestApp/Swift/Bridge/TestApp-Bridging-Header.h";
 			};
@@ -1100,6 +1203,7 @@
 				);
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.halin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 			};
@@ -1116,6 +1220,7 @@
 				);
 				INFOPLIST_FILE = TestAppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "me.halin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TestApp.app/TestApp";
 			};

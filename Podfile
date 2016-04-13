@@ -9,7 +9,8 @@ pod 'PlaceHolderViewLib'
 
 pod 'JSPatch'
 
-pod 'ReactiveCocoa'
+#使用最新版本会导致build失败(Result 2.0.0导致),原因未知
+pod 'ReactiveCocoa' , '4.0.1'
 
 pod 'KissXML'
 

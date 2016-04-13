@@ -10,18 +10,18 @@ PODS:
     - KissXML/Core
   - Kiwi (2.4.0)
   - PlaceHolderViewLib (1.0.1)
-  - ReactiveCocoa (4.1.0):
-    - ReactiveCocoa/UI (= 4.1.0)
-    - Result (~> 2.0)
-  - ReactiveCocoa/Core (4.1.0):
+  - ReactiveCocoa (4.0.1):
+    - ReactiveCocoa/UI (= 4.0.1)
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/Core (4.0.1):
     - ReactiveCocoa/no-arc
-    - Result (~> 2.0)
-  - ReactiveCocoa/no-arc (4.1.0):
-    - Result (~> 2.0)
-  - ReactiveCocoa/UI (4.1.0):
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/no-arc (4.0.1):
+    - Result (~> 1.0.2)
+  - ReactiveCocoa/UI (4.0.1):
     - ReactiveCocoa/Core
-    - Result (~> 2.0)
-  - Result (2.0.0)
+    - Result (~> 1.0.2)
+  - Result (1.0.2)
 
 DEPENDENCIES:
   - DataBindingLib
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - KissXML
   - Kiwi
   - PlaceHolderViewLib
-  - ReactiveCocoa
+  - ReactiveCocoa (= 4.0.1)
 
 SPEC CHECKSUMS:
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
@@ -37,7 +37,7 @@ SPEC CHECKSUMS:
   KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   PlaceHolderViewLib: 0372b954482cd22fca7da138ea6f45b4ad94990d
-  ReactiveCocoa: d70004d7a366a7b8e87e60ce2347182c77701949
-  Result: 9e75e1111c774c6ac594e14907b15057053a7959
+  ReactiveCocoa: f7011630aee4deeb16352fcb1b50d6bde9db4f90
+  Result: dd3dd71af3fa2e262f1a999e14fba2c25ec14f16
 
 COCOAPODS: 0.39.0

@@ -44,6 +44,7 @@ SINGLETON_FOR_CLASS(ModuleLoader)
 
 - (void)loadModuleWithName:(NSString *)name{
     
+    //TODO:不适合带入Bundle
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:@"xml"];
     //加载默认配置
     NSData *configData = [NSData dataWithContentsOfFile:path];
