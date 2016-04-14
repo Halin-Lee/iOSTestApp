@@ -2,7 +2,7 @@
 //  AutoEventTrackingDemoViewController.h
 //  TestApp
 //
-//  Created by 17track on 4/11/16.
+//  Created by Halin on 4/11/16.
 //  Copyright © 2016 me.halin. All rights reserved.
 //
 

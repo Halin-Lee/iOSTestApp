@@ -11,7 +11,7 @@
 #import "JSPatchDemo.h"
 #import "RACDemo.h"
 #import "SlideMenuNavigationController.h"
-#import "Mediator/Mediator.h"
+#import "Mediator.h"
 
 @interface AppDelegate ()
 

@@ -1,5 +1,23 @@
 PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
   - DataBindingLib (1.0.0)
+  - Fundamental (0.1.0):
+    - AFNetworking
+    - KissXML
   - JSPatch (0.2):
     - JSPatch/Core (= 0.2)
   - JSPatch/Core (0.2)
@@ -25,14 +43,21 @@ PODS:
 
 DEPENDENCIES:
   - DataBindingLib
+  - Fundamental (from `Fundamental/Fundamental.podspec`)
   - JSPatch
   - KissXML
   - Kiwi
   - PlaceHolderViewLib
   - ReactiveCocoa (= 4.0.1)
 
+EXTERNAL SOURCES:
+  Fundamental:
+    :path: Fundamental/Fundamental.podspec
+
 SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
+  Fundamental: 2c5a0ffd8f210310e4fa0b5f807f9fbaaab299a8
   JSPatch: 23dcceeec8f8357644f8ef70eb002ef2dbd830de
   KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8

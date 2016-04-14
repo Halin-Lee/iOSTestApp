@@ -4,6 +4,8 @@
  use_frameworks!
 
 
+pod 'Fundamental', :path => 'Fundamental/Fundamental.podspec'
+
 pod 'DataBindingLib'
 pod 'PlaceHolderViewLib'
 

@@ -12,7 +12,6 @@
 		DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A41C85727300CC2F3F /* MenuViewController.m */; };
 		DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */; };
 		DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */; };
-		DA39CA171CBB8D5500E14414 /* AutoEventTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */; };
 		DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD421C8FC26800DDC91A /* JPLoader.m */; };
 		DA59CD551C8FC26800DDC91A /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD461C8FC26800DDC91A /* ioapi.c */; };
 		DA59CD561C8FC26800DDC91A /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = DA59CD481C8FC26800DDC91A /* mztools.c */; };
@@ -38,17 +37,10 @@
 		DA779AE71CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AE11CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib */; };
 		DA779AE81CBE499A00373B73 /* AutoEventTrackingDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA779AE31CBE499A00373B73 /* AutoEventTrackingDemoViewController.m */; };
 		DA779AE91CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AE41CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib */; };
-		DA7878C91CA3B500004F4483 /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878C61CA3B500004F4483 /* Router.m */; };
-		DA7878CA1CA3B500004F4483 /* RouterConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878C81CA3B500004F4483 /* RouterConfiguration.m */; };
-		DA7878E11CA3B538004F4483 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878D81CA3B538004F4483 /* Logger.m */; };
-		DA7878E21CA3B538004F4483 /* LoggerConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878DA1CA3B538004F4483 /* LoggerConfiguration.m */; };
-		DA7878E41CA3B538004F4483 /* LogUtilTestIn.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878E01CA3B538004F4483 /* LogUtilTestIn.m */; };
-		DA7878E71CA3B673004F4483 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878E61CA3B673004F4483 /* NSString+Addition.m */; };
-		DA7878EE1CA3B8F4004F4483 /* ViewControllerRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878ED1CA3B8F4004F4483 /* ViewControllerRegister.m */; };
-		DA7878FC1CA3C9FA004F4483 /* RouterFirstDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878FA1CA3C9FA004F4483 /* RouterFirstDemoViewController.m */; };
-		DA7878FD1CA3C9FA004F4483 /* RouterFirstDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7878FB1CA3C9FA004F4483 /* RouterFirstDemoViewController.xib */; };
-		DA7879011CA3CA0A004F4483 /* RouterSecondDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7878FF1CA3CA0A004F4483 /* RouterSecondDemoViewController.m */; };
-		DA7879021CA3CA0A004F4483 /* RouterSecondDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7879001CA3CA0A004F4483 /* RouterSecondDemoViewController.xib */; };
+		DA779AFD1CBFB03600373B73 /* RouterFirstDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA779AF81CBFB03600373B73 /* RouterFirstDemoViewController.m */; };
+		DA779AFE1CBFB03600373B73 /* RouterFirstDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AF91CBFB03600373B73 /* RouterFirstDemoViewController.xib */; };
+		DA779AFF1CBFB03600373B73 /* RouterSecondDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA779AFB1CBFB03600373B73 /* RouterSecondDemoViewController.m */; };
+		DA779B001CBFB03600373B73 /* RouterSecondDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA779AFC1CBFB03600373B73 /* RouterSecondDemoViewController.xib */; };
 		DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA819F991C9A5559007A6C56 /* SlideMenuNavigationController.m */; };
 		DA819FC61C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */; };
 		DA819FC81C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA819FC71C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard */; };
@@ -65,20 +57,13 @@
 		DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC291C6495C6008605E1 /* PPMainViewController.m */; };
 		DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */; };
 		DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */; };
-		DA8D27C21CBBC24D0033F09F /* UIView+AutoEventTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */; };
-		DA8D27C81CBC94B20033F09F /* AutoEventTrackingXMLLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */; };
 		DA8D27CA1CBCC1230033F09F /* event_tracker_demo_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA8D27C91CBCC1230033F09F /* event_tracker_demo_list.xml */; };
-		DA8D27CD1CBCC76F0033F09F /* TrackEventItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */; };
 		DA8D27CF1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27CE1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m */; };
 		DA8D27D11CBCD26A0033F09F /* event_tracker_demo_list.xml in Resources */ = {isa = PBXBuildFile; fileRef = DA8D27D01CBCD26A0033F09F /* event_tracker_demo_list.xml */; };
-		DA8D27D81CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */; };
 		DAA591CE1C8EC555002D5CD4 /* JSPatchDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA591CD1C8EC555002D5CD4 /* JSPatchDemoViewController.m */; };
 		DAA591D01C8EC5BC002D5CD4 /* JSPatchDemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA591CF1C8EC5BC002D5CD4 /* JSPatchDemoView.xib */; };
 		DAA591D21C8EC703002D5CD4 /* JSPatchDemo.js in Resources */ = {isa = PBXBuildFile; fileRef = DAA591D11C8EC703002D5CD4 /* JSPatchDemo.js */; };
 		DAA591D41C8ED8EC002D5CD4 /* JSPatchDemo_Second.js in Resources */ = {isa = PBXBuildFile; fileRef = DAA591D31C8ED8EC002D5CD4 /* JSPatchDemo_Second.js */; };
-		DAB7734F1CA39CE900411FC1 /* GolbalConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7734B1CA39CE900411FC1 /* GolbalConfiguration.m */; };
-		DAB773501CA39CE900411FC1 /* ModuleLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB7734E1CA39CE900411FC1 /* ModuleLoader.m */; };
-		DAC99C9B1CA1528C00FB436D /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC99C9A1CA1528C00FB436D /* Mediator.m */; };
 		DAC99CA01CA23A4300FB436D /* MediatorDemoPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC99C9F1CA23A4300FB436D /* MediatorDemoPushViewController.m */; };
 		DAC99CA21CA23B1B00FB436D /* MediatorDemoPushView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAC99CA11CA23B1B00FB436D /* MediatorDemoPushView.xib */; };
 		DAC99CA61CA23BEA00FB436D /* MediatorDemoPresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC99CA41CA23BEA00FB436D /* MediatorDemoPresentViewController.m */; };
@@ -114,8 +99,6 @@
 		DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuRootViewController.m; sourceTree = "<group>"; };
 		DA2A44A91C8572F100CC2F3F /* LeftSideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftSideViewController.h; sourceTree = "<group>"; };
 		DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftSideViewController.m; sourceTree = "<group>"; };
-		DA39CA151CBB8D5500E14414 /* AutoEventTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTracking.h; sourceTree = "<group>"; };
-		DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTracking.m; sourceTree = "<group>"; };
 		DA59CD411C8FC26800DDC91A /* JPLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPLoader.h; sourceTree = "<group>"; };
 		DA59CD421C8FC26800DDC91A /* JPLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPLoader.m; sourceTree = "<group>"; };
 		DA59CD451C8FC26800DDC91A /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
@@ -157,39 +140,12 @@
 		DA779AE21CBE499A00373B73 /* AutoEventTrackingDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingDemoViewController.h; sourceTree = "<group>"; };
 		DA779AE31CBE499A00373B73 /* AutoEventTrackingDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingDemoViewController.m; sourceTree = "<group>"; };
 		DA779AE41CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AutoEventTrackingDemoViewController.xib; sourceTree = "<group>"; };
-		DA7878C31CA3B4BF004F4483 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
-		DA7878C51CA3B500004F4483 /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
-		DA7878C61CA3B500004F4483 /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
-		DA7878C71CA3B500004F4483 /* RouterConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterConfiguration.h; sourceTree = "<group>"; };
-		DA7878C81CA3B500004F4483 /* RouterConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterConfiguration.m; sourceTree = "<group>"; };
-		DA7878CD1CA3B538004F4483 /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
-		DA7878CE1CA3B538004F4483 /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
-		DA7878CF1CA3B538004F4483 /* GAIEcommerceFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceFields.h; sourceTree = "<group>"; };
-		DA7878D01CA3B538004F4483 /* GAIEcommerceProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProduct.h; sourceTree = "<group>"; };
-		DA7878D11CA3B538004F4483 /* GAIEcommerceProductAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommerceProductAction.h; sourceTree = "<group>"; };
-		DA7878D21CA3B538004F4483 /* GAIEcommercePromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIEcommercePromotion.h; sourceTree = "<group>"; };
-		DA7878D31CA3B538004F4483 /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
-		DA7878D41CA3B538004F4483 /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
-		DA7878D51CA3B538004F4483 /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
-		DA7878D61CA3B538004F4483 /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
-		DA7878D71CA3B538004F4483 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		DA7878D81CA3B538004F4483 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
-		DA7878D91CA3B538004F4483 /* LoggerConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerConfiguration.h; sourceTree = "<group>"; };
-		DA7878DA1CA3B538004F4483 /* LoggerConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoggerConfiguration.m; sourceTree = "<group>"; };
-		DA7878DB1CA3B538004F4483 /* LoggerConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerConstant.h; sourceTree = "<group>"; };
-		DA7878DC1CA3B538004F4483 /* LogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtil.h; sourceTree = "<group>"; };
-		DA7878DF1CA3B538004F4483 /* LogUtilTestIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogUtilTestIn.h; sourceTree = "<group>"; };
-		DA7878E01CA3B538004F4483 /* LogUtilTestIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogUtilTestIn.m; sourceTree = "<group>"; };
-		DA7878E51CA3B673004F4483 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
-		DA7878E61CA3B673004F4483 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
-		DA7878EC1CA3B8F4004F4483 /* ViewControllerRegister.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRegister.h; sourceTree = "<group>"; };
-		DA7878ED1CA3B8F4004F4483 /* ViewControllerRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRegister.m; sourceTree = "<group>"; };
-		DA7878F91CA3C9FA004F4483 /* RouterFirstDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterFirstDemoViewController.h; sourceTree = "<group>"; };
-		DA7878FA1CA3C9FA004F4483 /* RouterFirstDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterFirstDemoViewController.m; sourceTree = "<group>"; };
-		DA7878FB1CA3C9FA004F4483 /* RouterFirstDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterFirstDemoViewController.xib; sourceTree = "<group>"; };
-		DA7878FE1CA3CA0A004F4483 /* RouterSecondDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterSecondDemoViewController.h; sourceTree = "<group>"; };
-		DA7878FF1CA3CA0A004F4483 /* RouterSecondDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterSecondDemoViewController.m; sourceTree = "<group>"; };
-		DA7879001CA3CA0A004F4483 /* RouterSecondDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterSecondDemoViewController.xib; sourceTree = "<group>"; };
+		DA779AF71CBFB03600373B73 /* RouterFirstDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterFirstDemoViewController.h; sourceTree = "<group>"; };
+		DA779AF81CBFB03600373B73 /* RouterFirstDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterFirstDemoViewController.m; sourceTree = "<group>"; };
+		DA779AF91CBFB03600373B73 /* RouterFirstDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterFirstDemoViewController.xib; sourceTree = "<group>"; };
+		DA779AFA1CBFB03600373B73 /* RouterSecondDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterSecondDemoViewController.h; sourceTree = "<group>"; };
+		DA779AFB1CBFB03600373B73 /* RouterSecondDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouterSecondDemoViewController.m; sourceTree = "<group>"; };
+		DA779AFC1CBFB03600373B73 /* RouterSecondDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RouterSecondDemoViewController.xib; sourceTree = "<group>"; };
 		DA819F981C9A5559007A6C56 /* SlideMenuNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuNavigationController.h; sourceTree = "<group>"; };
 		DA819F991C9A5559007A6C56 /* SlideMenuNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlideMenuNavigationController.m; sourceTree = "<group>"; };
 		DA819FC51C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SlideMenuNavigationController.storyboard; sourceTree = "<group>"; };
@@ -218,32 +174,14 @@
 		DA86DC341C64A390008605E1 /* PPPhoneFileBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPPhoneFileBrowserViewController.h; sourceTree = "<group>"; };
 		DA86DC351C64A390008605E1 /* PPPhoneFileBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPPhoneFileBrowserViewController.m; sourceTree = "<group>"; };
 		DA86DC361C64A390008605E1 /* PPPhoneFileBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PPPhoneFileBrowserViewController.xib; sourceTree = "<group>"; };
-		DA8D27C01CBBC24D0033F09F /* UIView+AutoEventTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoEventTracking.h"; sourceTree = "<group>"; };
-		DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoEventTracking.m"; sourceTree = "<group>"; };
-		DA8D27C61CBC94B20033F09F /* AutoEventTrackingXMLLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingXMLLoader.h; sourceTree = "<group>"; };
-		DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingXMLLoader.m; sourceTree = "<group>"; };
 		DA8D27C91CBCC1230033F09F /* event_tracker_demo_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = event_tracker_demo_list.xml; sourceTree = "<group>"; };
-		DA8D27CB1CBCC76F0033F09F /* TrackEventItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackEventItem.h; sourceTree = "<group>"; };
-		DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackEventItem.m; sourceTree = "<group>"; };
 		DA8D27CE1CBCCC400033F09F /* AutoEventTrackingXMLLoaderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoEventTrackingXMLLoaderTests.m; sourceTree = "<group>"; };
 		DA8D27D01CBCD26A0033F09F /* event_tracker_demo_list.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = event_tracker_demo_list.xml; sourceTree = "<group>"; };
-		DA8D27D51CBCD4760033F09F /* AutoEventTrackingDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoEventTrackingDelegate.h; sourceTree = "<group>"; };
-		DA8D27D61CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultAutoEventTrackingDelegate.h; sourceTree = "<group>"; };
-		DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultAutoEventTrackingDelegate.m; sourceTree = "<group>"; };
 		DAA591CC1C8EC555002D5CD4 /* JSPatchDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSPatchDemoViewController.h; sourceTree = "<group>"; };
 		DAA591CD1C8EC555002D5CD4 /* JSPatchDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSPatchDemoViewController.m; sourceTree = "<group>"; };
 		DAA591CF1C8EC5BC002D5CD4 /* JSPatchDemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JSPatchDemoView.xib; sourceTree = "<group>"; };
 		DAA591D11C8EC703002D5CD4 /* JSPatchDemo.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatchDemo.js; sourceTree = "<group>"; };
 		DAA591D31C8ED8EC002D5CD4 /* JSPatchDemo_Second.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatchDemo_Second.js; sourceTree = "<group>"; };
-		DAB773491CA39CE900411FC1 /* ConfigurableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ConfigurableProtocol.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DAB7734A1CA39CE900411FC1 /* GolbalConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = GolbalConfiguration.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		DAB7734B1CA39CE900411FC1 /* GolbalConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = GolbalConfiguration.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		DAB7734C1CA39CE900411FC1 /* InitializableProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitializableProtocol.h; sourceTree = "<group>"; };
-		DAB7734D1CA39CE900411FC1 /* ModuleLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleLoader.h; sourceTree = "<group>"; };
-		DAB7734E1CA39CE900411FC1 /* ModuleLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleLoader.m; sourceTree = "<group>"; };
-		DAC99C991CA1528C00FB436D /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
-		DAC99C9A1CA1528C00FB436D /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
-		DAC99C9C1CA1545400FB436D /* ConfigurableViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ConfigurableViewControllerDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		DAC99C9E1CA23A4300FB436D /* MediatorDemoPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediatorDemoPushViewController.h; sourceTree = "<group>"; };
 		DAC99C9F1CA23A4300FB436D /* MediatorDemoPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediatorDemoPushViewController.m; sourceTree = "<group>"; };
 		DAC99CA11CA23B1B00FB436D /* MediatorDemoPushView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MediatorDemoPushView.xib; sourceTree = "<group>"; };
@@ -331,17 +269,6 @@
 			isa = PBXGroup;
 			children = (
 				DA39CA181CBB8D9D00E14414 /* Demo */,
-				DA39CA151CBB8D5500E14414 /* AutoEventTracking.h */,
-				DA39CA161CBB8D5500E14414 /* AutoEventTracking.m */,
-				DA8D27C01CBBC24D0033F09F /* UIView+AutoEventTracking.h */,
-				DA8D27C11CBBC24D0033F09F /* UIView+AutoEventTracking.m */,
-				DA8D27C61CBC94B20033F09F /* AutoEventTrackingXMLLoader.h */,
-				DA8D27C71CBC94B20033F09F /* AutoEventTrackingXMLLoader.m */,
-				DA8D27CB1CBCC76F0033F09F /* TrackEventItem.h */,
-				DA8D27CC1CBCC76F0033F09F /* TrackEventItem.m */,
-				DA8D27D51CBCD4760033F09F /* AutoEventTrackingDelegate.h */,
-				DA8D27D61CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.h */,
-				DA8D27D71CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m */,
 			);
 			path = AutoEventTracking;
 			sourceTree = "<group>";
@@ -470,73 +397,23 @@
 			path = AutoEventTrackingDemo;
 			sourceTree = "<group>";
 		};
-		DA7878C21CA3B4BF004F4483 /* Utils */ = {
+		DA779AEC1CBFAD2A00373B73 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				DA7878E51CA3B673004F4483 /* NSString+Addition.h */,
-				DA7878E61CA3B673004F4483 /* NSString+Addition.m */,
-				DA7878CB1CA3B538004F4483 /* Logger */,
-				DA7878C31CA3B4BF004F4483 /* Singleton.h */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		DA7878C41CA3B500004F4483 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				DA7878E81CA3B80A004F4483 /* Demo */,
-				DA7878C51CA3B500004F4483 /* Router.h */,
-				DA7878C61CA3B500004F4483 /* Router.m */,
-				DA7878C71CA3B500004F4483 /* RouterConfiguration.h */,
-				DA7878C81CA3B500004F4483 /* RouterConfiguration.m */,
-				DA7878EC1CA3B8F4004F4483 /* ViewControllerRegister.h */,
-				DA7878ED1CA3B8F4004F4483 /* ViewControllerRegister.m */,
+				DA779AED1CBFAD2A00373B73 /* Demo */,
 			);
 			path = Router;
 			sourceTree = "<group>";
 		};
-		DA7878CB1CA3B538004F4483 /* Logger */ = {
+		DA779AED1CBFAD2A00373B73 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				DA7878CC1CA3B538004F4483 /* GoogleAnalytics */,
-				DA7878D71CA3B538004F4483 /* Logger.h */,
-				DA7878D81CA3B538004F4483 /* Logger.m */,
-				DA7878D91CA3B538004F4483 /* LoggerConfiguration.h */,
-				DA7878DA1CA3B538004F4483 /* LoggerConfiguration.m */,
-				DA7878DB1CA3B538004F4483 /* LoggerConstant.h */,
-				DA7878DC1CA3B538004F4483 /* LogUtil.h */,
-				DA7878DF1CA3B538004F4483 /* LogUtilTestIn.h */,
-				DA7878E01CA3B538004F4483 /* LogUtilTestIn.m */,
-			);
-			path = Logger;
-			sourceTree = "<group>";
-		};
-		DA7878CC1CA3B538004F4483 /* GoogleAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				DA7878CD1CA3B538004F4483 /* GAI.h */,
-				DA7878CE1CA3B538004F4483 /* GAIDictionaryBuilder.h */,
-				DA7878CF1CA3B538004F4483 /* GAIEcommerceFields.h */,
-				DA7878D01CA3B538004F4483 /* GAIEcommerceProduct.h */,
-				DA7878D11CA3B538004F4483 /* GAIEcommerceProductAction.h */,
-				DA7878D21CA3B538004F4483 /* GAIEcommercePromotion.h */,
-				DA7878D31CA3B538004F4483 /* GAIFields.h */,
-				DA7878D41CA3B538004F4483 /* GAILogger.h */,
-				DA7878D51CA3B538004F4483 /* GAITrackedViewController.h */,
-				DA7878D61CA3B538004F4483 /* GAITracker.h */,
-			);
-			path = GoogleAnalytics;
-			sourceTree = "<group>";
-		};
-		DA7878E81CA3B80A004F4483 /* Demo */ = {
-			isa = PBXGroup;
-			children = (
-				DA7878F91CA3C9FA004F4483 /* RouterFirstDemoViewController.h */,
-				DA7878FA1CA3C9FA004F4483 /* RouterFirstDemoViewController.m */,
-				DA7878FB1CA3C9FA004F4483 /* RouterFirstDemoViewController.xib */,
-				DA7878FE1CA3CA0A004F4483 /* RouterSecondDemoViewController.h */,
-				DA7878FF1CA3CA0A004F4483 /* RouterSecondDemoViewController.m */,
-				DA7879001CA3CA0A004F4483 /* RouterSecondDemoViewController.xib */,
+				DA779AF71CBFB03600373B73 /* RouterFirstDemoViewController.h */,
+				DA779AF81CBFB03600373B73 /* RouterFirstDemoViewController.m */,
+				DA779AF91CBFB03600373B73 /* RouterFirstDemoViewController.xib */,
+				DA779AFA1CBFB03600373B73 /* RouterSecondDemoViewController.h */,
+				DA779AFB1CBFB03600373B73 /* RouterSecondDemoViewController.m */,
+				DA779AFC1CBFB03600373B73 /* RouterSecondDemoViewController.xib */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -623,26 +500,10 @@
 			path = IM;
 			sourceTree = "<group>";
 		};
-		DAB773481CA39CE900411FC1 /* GolbalConfiguration */ = {
-			isa = PBXGroup;
-			children = (
-				DAB773491CA39CE900411FC1 /* ConfigurableProtocol.h */,
-				DAB7734A1CA39CE900411FC1 /* GolbalConfiguration.h */,
-				DAB7734B1CA39CE900411FC1 /* GolbalConfiguration.m */,
-				DAB7734C1CA39CE900411FC1 /* InitializableProtocol.h */,
-				DAB7734D1CA39CE900411FC1 /* ModuleLoader.h */,
-				DAB7734E1CA39CE900411FC1 /* ModuleLoader.m */,
-			);
-			path = GolbalConfiguration;
-			sourceTree = "<group>";
-		};
 		DAC99C981CA1527E00FB436D /* Mediator */ = {
 			isa = PBXGroup;
 			children = (
 				DAC99C9D1CA23A2C00FB436D /* Demo */,
-				DAC99C991CA1528C00FB436D /* Mediator.h */,
-				DAC99C9A1CA1528C00FB436D /* Mediator.m */,
-				DAC99C9C1CA1545400FB436D /* ConfigurableViewControllerDelegate.h */,
 			);
 			path = Mediator;
 			sourceTree = "<group>";
@@ -684,11 +545,9 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DA779AEC1CBFAD2A00373B73 /* Router */,
 				DA39CA141CBB8CC100E14414 /* AutoEventTracking */,
 				DAAFA5721CBA336D00A80E10 /* IM */,
-				DA7878C41CA3B500004F4483 /* Router */,
-				DA7878C21CA3B4BF004F4483 /* Utils */,
-				DAB773481CA39CE900411FC1 /* GolbalConfiguration */,
 				DAC99C981CA1527E00FB436D /* Mediator */,
 				DA819FE11C9A8A90007A6C56 /* Swift */,
 				DA819FE01C9A8740007A6C56 /* RAC */,
@@ -845,21 +704,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA7879021CA3CA0A004F4483 /* RouterSecondDemoViewController.xib in Resources */,
 				DAC99CA71CA23BEA00FB436D /* MediatorDemoPresentViewController.xib in Resources */,
 				DA819FC81C9A5F2A007A6C56 /* SlideMenuRootViewController.storyboard in Resources */,
 				DAA591D41C8ED8EC002D5CD4 /* JSPatchDemo_Second.js in Resources */,
 				DAC99CA21CA23B1B00FB436D /* MediatorDemoPushView.xib in Resources */,
 				DA779AE91CBE499A00373B73 /* AutoEventTrackingDemoViewController.xib in Resources */,
 				DA779AE61CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.xib in Resources */,
+				DA779B001CBFB03600373B73 /* RouterSecondDemoViewController.xib in Resources */,
 				DA8D27CA1CBCC1230033F09F /* event_tracker_demo_list.xml in Resources */,
 				DA6F666B1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.xib in Resources */,
 				DA779AE71CBE499A00373B73 /* AutoEventTrackingDemoTableViewCellSubview.xib in Resources */,
 				DA59CD5B1C8FC26800DDC91A /* packer.php in Resources */,
 				FFDA444E1BA7B659009C1E34 /* Main.storyboard in Resources */,
+				DA779AFE1CBFB03600373B73 /* RouterFirstDemoViewController.xib in Resources */,
 				DA819FC61C9A5EDE007A6C56 /* SlideMenuNavigationController.storyboard in Resources */,
 				DA86DC381C64A390008605E1 /* PPPhoneFileBrowserViewController.xib in Resources */,
-				DA7878FD1CA3C9FA004F4483 /* RouterFirstDemoViewController.xib in Resources */,
 				DA6F666D1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.xib in Resources */,
 				FFDA44531BA7B659009C1E34 /* LaunchScreen.xib in Resources */,
 				DAA591D21C8EC703002D5CD4 /* JSPatchDemo.js in Resources */,
@@ -982,33 +841,21 @@
 				DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */,
 				DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */,
 				DA819FF41C9A9971007A6C56 /* RACDemo.m in Sources */,
-				DA7878E41CA3B538004F4483 /* LogUtilTestIn.m in Sources */,
 				DA779AE51CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m in Sources */,
-				DA7878C91CA3B500004F4483 /* Router.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
 				DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */,
 				DA59CD561C8FC26800DDC91A /* mztools.c in Sources */,
 				DA819FF71C9AA89B007A6C56 /* RACSignalDemo.m in Sources */,
 				DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */,
-				DA8D27C21CBBC24D0033F09F /* UIView+AutoEventTracking.m in Sources */,
-				DA7878FC1CA3C9FA004F4483 /* RouterFirstDemoViewController.m in Sources */,
-				DAB773501CA39CE900411FC1 /* ModuleLoader.m in Sources */,
 				DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */,
-				DAC99C9B1CA1528C00FB436D /* Mediator.m in Sources */,
 				DA819FEE1C9A9461007A6C56 /* SwiftDemo.m in Sources */,
 				DA819FF11C9A9911007A6C56 /* JSPatchDemo.m in Sources */,
 				DA779AE81CBE499A00373B73 /* AutoEventTrackingDemoViewController.m in Sources */,
 				DA81A0061C9B96FA007A6C56 /* RACSequence_RACTupleDemo.m in Sources */,
 				DA59CD571C8FC26800DDC91A /* unzip.c in Sources */,
-				DA8D27D81CBCD5BF0033F09F /* DefaultAutoEventTrackingDelegate.m in Sources */,
-				DA7878EE1CA3B8F4004F4483 /* ViewControllerRegister.m in Sources */,
 				DA6F66671C3E6A250006D8A3 /* DataBindingPlaceHolderbTestModel.m in Sources */,
 				DAC99CA01CA23A4300FB436D /* MediatorDemoPushViewController.m in Sources */,
-				DA7879011CA3CA0A004F4483 /* RouterSecondDemoViewController.m in Sources */,
-				DA7878E11CA3B538004F4483 /* Logger.m in Sources */,
-				DA8D27CD1CBCC76F0033F09F /* TrackEventItem.m in Sources */,
 				DA59CD551C8FC26800DDC91A /* ioapi.c in Sources */,
-				DA7878CA1CA3B500004F4483 /* RouterConfiguration.m in Sources */,
 				DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */,
 				FFDA44451BA7B659009C1E34 /* main.m in Sources */,
 				DAA591CE1C8EC555002D5CD4 /* JSPatchDemoViewController.m in Sources */,
@@ -1016,23 +863,20 @@
 				DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */,
 				DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */,
 				DA819FE71C9A8DE9007A6C56 /* ObjectiveCToSwift.swift in Sources */,
-				DAB7734F1CA39CE900411FC1 /* GolbalConfiguration.m in Sources */,
 				DA59CD5A1C8FC26800DDC91A /* ZipArchive.m in Sources */,
 				DA819FFD1C9AB640007A6C56 /* RACSubjectDemo.m in Sources */,
 				DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */,
 				FFDA44721BA7BC25009C1E34 /* MessageUITestViewController.m in Sources */,
+				DA779AFD1CBFB03600373B73 /* RouterFirstDemoViewController.m in Sources */,
 				DA6F666C1C3E6A250006D8A3 /* DataBindingPlaceHolderTestLabel.m in Sources */,
+				DA779AFF1CBFB03600373B73 /* RouterSecondDemoViewController.m in Sources */,
 				DA819FE41C9A8AAE007A6C56 /* HelloWorld.swift in Sources */,
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,
 				DA59CD581C8FC26800DDC91A /* zip.c in Sources */,
-				DA39CA171CBB8D5500E14414 /* AutoEventTracking.m in Sources */,
 				DA81A0001C9AB8EB007A6C56 /* RACReplaySubjectDemo.m in Sources */,
-				DA7878E21CA3B538004F4483 /* LoggerConfiguration.m in Sources */,
 				DA819FEA1C9A8DFD007A6C56 /* SwiftToObjectiveC.m in Sources */,
 				DA6F666A1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m in Sources */,
-				DA8D27C81CBC94B20033F09F /* AutoEventTrackingXMLLoader.m in Sources */,
 				DA6F66571C3E6A050006D8A3 /* TestBuilder.m in Sources */,
-				DA7878E71CA3B673004F4483 /* NSString+Addition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
