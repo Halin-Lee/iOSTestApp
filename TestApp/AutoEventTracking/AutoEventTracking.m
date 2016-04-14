@@ -43,6 +43,8 @@ static NSString *const TAG = @"AutoEventTracking";
 
 @implementation AutoEventTracking
 
+#pragma mark - 初始化
+
 - (instancetype)initWithController:(UIViewController *)viewController delegate:(id<AutoEventTrackingDelegate>)delegate
 {
     self = [super init];
@@ -52,23 +54,33 @@ static NSString *const TAG = @"AutoEventTracking";
         
         //增加View监听
         _rootView = viewController.view;
+        _rootView.userInteractionEnabled = YES;
+        
+        //点击事件添加
         UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
         tapGestureRecognizer.delegate = self;
+        tapGestureRecognizer.cancelsTouchesInView = NO;             //一个事件不止由一个GestureRecognizer接收
         [_rootView addGestureRecognizer:tapGestureRecognizer];
         
+        //水平滑动事件添加
         UISwipeGestureRecognizer *swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeGestureRecognizer.delegate = self;
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionLeft|UISwipeGestureRecognizerDirectionRight;
+        swipeGestureRecognizer.cancelsTouchesInView = NO;
         [_rootView addGestureRecognizer:swipeGestureRecognizer];
         
+        
+        //垂直滑动事件添加
         swipeGestureRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
         swipeGestureRecognizer.delegate = self;
         swipeGestureRecognizer.direction = UISwipeGestureRecognizerDirectionUp|UISwipeGestureRecognizerDirectionDown;
+        swipeGestureRecognizer.cancelsTouchesInView = NO;
         [_rootView addGestureRecognizer:swipeGestureRecognizer];
         
-        
+        //长按事件添加
         UILongPressGestureRecognizer *longPressGestureRecognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
         longPressGestureRecognizer.delegate = self;
+        longPressGestureRecognizer.cancelsTouchesInView = NO;
         [_rootView addGestureRecognizer:longPressGestureRecognizer];
         
         //保存delegate
@@ -94,38 +106,29 @@ static NSString *const TAG = @"AutoEventTracking";
     return self;
 }
 
+#pragma mark - 前置判断
+
+
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
+    //   允许多个UIGestureRecognizer共享一个点击
+    return YES;
+}
 
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
+    //获得当前点中的view
     CGPoint touchPoint = [gestureRecognizer locationInView:_rootView];
     _viewOnTouch = [self viewAtPoint:touchPoint withView:_rootView];
     _isLongPressHappen = NO;
     if (_viewOnTouch) {
-//        NSLog(@"gestureRecognizerShouldBegin %@",_viewOnTouch);
         return YES;
     }else{
         return NO;
     }
-
-}
-
-- (UIView *)viewAtPoint:(CGPoint)point withView:(UIView *)view{
-    if ( view.isHidden || view.alpha <= 0.01) {
-        //看不到不处理
-        return nil;
-    }
     
-    if ([view pointInside:point withEvent:nil]) {
-        for (UIView *subview in [view.subviews reverseObjectEnumerator]) {
-            CGPoint convertedPoint = [subview convertPoint:point fromView:view];
-            UIView *hitTestView = [self viewAtPoint:convertedPoint withView:subview];
-            if (hitTestView) {
-                return hitTestView;
-            }
-        }
-        return view;
-    }
-    return nil;
 }
+
+
+#pragma mark - 事件触发
 
 
 - (void)tap:(UIGestureRecognizer *)gestureRecognizer {
@@ -143,10 +146,7 @@ static NSString *const TAG = @"AutoEventTracking";
     }
 }
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-    //   允许多个UIGestureRecognizer共享一个点击
-    return YES;
-}
+
 
 - (void)uploadEventWithView:(UIView *)view eventType:(EventType)eventType{
     NSString *identifier = view.trackingID;
@@ -190,6 +190,31 @@ static NSString *const TAG = @"AutoEventTracking";
     
     
 }
+
+#pragma mark - 辅助方法
+
+/*
+ *根据点击位置及根view,获得点所对应的view
+ */
+- (UIView *)viewAtPoint:(CGPoint)point withView:(UIView *)view{
+    if ( view.isHidden || view.alpha <= 0.01) {
+        //看不到不处理
+        return nil;
+    }
+    
+    if ([view pointInside:point withEvent:nil]) {
+        for (UIView *subview in [view.subviews reverseObjectEnumerator]) {
+            CGPoint convertedPoint = [subview convertPoint:point fromView:view];
+            UIView *hitTestView = [self viewAtPoint:convertedPoint withView:subview];
+            if (hitTestView) {
+                return hitTestView;
+            }
+        }
+        return view;
+    }
+    return nil;
+}
+
 
 /**
  * 寻找父类,确定是否包含指定id
@@ -237,8 +262,8 @@ static NSString *const TAG = @"AutoEventTracking";
         return nil;
     }
     
-
-
+    
+    
 }
 
 @end
