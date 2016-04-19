@@ -56,7 +56,12 @@
     }
 
     
-    switch (viewControllerToPresent.viewControllerPresentType) {
+    ViewControllerPresentType viewControllerPresentType = ViewControllerPresentTypePush;
+    if ( [viewControllerToPresent respondsToSelector:@selector(viewControllerPresentType)]) {
+        viewControllerPresentType = viewControllerToPresent.viewControllerPresentType;
+    }
+    
+    switch (viewControllerPresentType) {
         case ViewControllerPresentTypePresent:{
             //子ViewController要求使用Present的方式展现,构造一个新的NavigationController,并present
             UINavigationController *newNav = [[UINavigationController alloc] initWithRootViewController:viewControllerToPresent];

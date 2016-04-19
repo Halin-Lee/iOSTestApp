@@ -16,6 +16,9 @@ pod 'ReactiveCocoa' , '4.0.1'
 
 pod 'KissXML'
 
+#FB循环引用解析
+pod 'FBRetainCycleDetector'
+
 target 'TestApp' do
 
 end

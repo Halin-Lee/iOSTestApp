@@ -15,6 +15,7 @@
 #import "MediatorDemoLib.h"
 #import "RouterFirstDemoViewController.h"
 #import "AutoEventTrackingDemoViewController.h"
+#import "FBRetainCycleDetectorDemoViewController.h"
 
 @interface TestBuilder ()
 
@@ -60,6 +61,9 @@
     
     NSString *autoEventTrackingGroupName = @"Auto Event Tracking Demo";
     [self addWithTestGroup:autoEventTrackingGroupName name:autoEventTrackingGroupName clazz:[AutoEventTrackingDemoViewController class]];
+    
+    NSString *retainCycleDetectorGroupName = @"FB Retain Cycle Detector";
+    [self addWithTestGroup:retainCycleDetectorGroupName name:retainCycleDetectorGroupName clazz:[FBRetainCycleDetectorDemoViewController class]];
     
     return [_testArray copy];
 }

@@ -15,11 +15,11 @@ typedef NS_ENUM(NSInteger, ViewControllerPresentType){
 
 @protocol ConfigurableViewControllerDelegate <NSObject>
 
-@required
+
+@optional
 //指明ViewController展现方式
 - (ViewControllerPresentType)viewControllerPresentType;
 
-@optional
 //启动时带进来的参数
 - (void)receiveStartParam:(NSDictionary *)dictionary;
 
