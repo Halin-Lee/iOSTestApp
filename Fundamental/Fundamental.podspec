@@ -9,15 +9,14 @@
 Pod::Spec.new do |s|
   s.name             = "Fundamental"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Fundamental."
+  s.summary          = "工具类"
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description      = <<-DESC
-                       DESC
+  s.description      = "工具类"
 
   s.homepage         = "https://github.com/<GITHUB_USERNAME>/Fundamental"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -70,5 +69,6 @@ s.vendored_frameworks ='Pod/Frameworks/TestinmAPM.framework'
 s.prefix_header_contents = '#import "CommonMarco.h"' ,'#import "NSError+Addition.h"'
 
 #gdata-objectivec-client 需要'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' ,'OTHER_LDFLAGS' => '-lxml2'这两部分
-s.xcconfig = { 'ENABLE_BITCODE' => 'NO','HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' ,'OTHER_LDFLAGS' => '-lxml2' }
+#'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES'
+s.xcconfig = { 'ENABLE_BITCODE' => 'NO','HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' ,'OTHER_LDFLAGS' => '-lxml2'  }
 end

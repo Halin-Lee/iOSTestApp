@@ -26,11 +26,11 @@ describe(@"Kiwi Demo", ^{
         });
         
         
-        it(@"模拟成功测试", ^{
+        xit(@"模拟成功测试", ^{
             [[testArray shouldNot] beNil];
         });
         
-        it(@"模拟失败测试", ^{
+        xit(@"模拟失败测试", ^{
 //            [[arrayInitInBeforeAll should] beNil];
         });
         
@@ -54,7 +54,7 @@ describe(@"Kiwi Demo", ^{
         });
         
         
-        it(@"测试stub是否成功", ^{
+        xit(@"测试stub是否成功", ^{
             [[testArray.description should] equal:@"Foo"];
             [[[testArray objectAtIndex:1] should] equal:@"objectAtIndex:1 调用"];
             //注2.当使用mock的时候.调用未stub的方法将导致测试出错,如当开启注1的时候,下面方法将报错
@@ -69,7 +69,7 @@ describe(@"Kiwi Demo", ^{
         });
         
         
-        it(@"测试stub withBlock是否成功", ^{
+        xit(@"测试stub withBlock是否成功", ^{
             [testArray stub:@selector(description) withBlock:^id(NSArray *params) {
                 return @"ABC";
             }];
@@ -82,7 +82,7 @@ describe(@"Kiwi Demo", ^{
     
     
     context(@"Kiwi 参数捕获", ^{
-        it(@"测试参数捕获", ^{
+        xit(@"测试参数捕获", ^{
             NSArray *testArray = @[@"a",@"b",@"c"];
             testArray = [NSArray mock];
             KWCaptureSpy *spy = [testArray captureArgument:@selector(objectAtIndex:) atIndex:0];
@@ -101,7 +101,7 @@ describe(@"Kiwi Demo", ^{
     });
     
     context(@"Kiwi NSArray测试", ^{
-        it(@"Kiwi NSArray测试", ^{
+        xit(@"Kiwi NSArray测试", ^{
             
             NSMutableArray *testArray = [NSMutableArray nullMock];
             NSArray *paramArray = @[@"a",@"b",@"c"];

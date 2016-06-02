@@ -1,29 +1,31 @@
 # Uncomment this line to define a global platform for your project
 # platform :ios, '8.0'
 # Uncomment this line if you're using Swift
- use_frameworks!
+use_frameworks!
+platform :ios, '8.0' 
+def basePods
+  pod 'Fundamental', :path => 'Fundamental/Fundamental.podspec'
 
+  pod 'DataBindingLib'
+  pod 'PlaceHolderViewLib'
 
-pod 'Fundamental', :path => 'Fundamental/Fundamental.podspec'
-
-pod 'DataBindingLib'
-pod 'PlaceHolderViewLib'
-
-pod 'JSPatch'
+  pod 'JSPatch'
 
 #使用最新版本会导致build失败(Result 2.0.0导致),原因未知
-pod 'ReactiveCocoa' , '4.0.1'
+  pod 'ReactiveCocoa' 
 
-pod 'KissXML'
+  pod 'KissXML'
 
 #FB循环引用解析
-pod 'FBRetainCycleDetector'
+  pod 'FBRetainCycleDetector'
 
+  pod 'AFNetworking'
+end
 target 'TestApp' do
-
+  basePods
+  target 'TestAppTests'  do
+    pod 'Kiwi'
+  end
 end
 
-target 'TestAppTests' , :exclusive => true do
-pod 'Kiwi'
 
-end

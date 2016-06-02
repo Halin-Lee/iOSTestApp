@@ -16,7 +16,7 @@
 #import "RouterFirstDemoViewController.h"
 #import "AutoEventTrackingDemoViewController.h"
 #import "FBRetainCycleDetectorDemoViewController.h"
-
+#import "AccountStoreDemoViewController.h"
 @interface TestBuilder ()
 
 @property (nonatomic,strong) NSMutableArray *testArray;
@@ -64,6 +64,9 @@
     
     NSString *retainCycleDetectorGroupName = @"FB Retain Cycle Detector";
     [self addWithTestGroup:retainCycleDetectorGroupName name:retainCycleDetectorGroupName clazz:[FBRetainCycleDetectorDemoViewController class]];
+    
+    NSString *accountStoreGroupName = @"Account Store Demo";
+    [self addWithTestGroup:accountStoreGroupName name:accountStoreGroupName clazz:[AccountStoreDemoViewController class]];
     
     return [_testArray copy];
 }

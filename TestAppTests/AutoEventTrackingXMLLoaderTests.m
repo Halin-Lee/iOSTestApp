@@ -16,7 +16,7 @@ SPEC_BEGIN(AutoEventTrackingXMLLoaderTests)
 describe(@"AutoEventTrackingXMLLoader Tests", ^{
 
     context(@"Test Load", ^{
-        it(@"Normal", ^{
+        xit(@"Normal", ^{
             
             AutoEventTrackingXMLLoader *loader = [AutoEventTrackingXMLLoader sharedSingleton];
             NSString *path = [[NSBundle bundleForClass:[self class]] pathForResource:@"event_tracker_demo_list" ofType:@"xml"];
