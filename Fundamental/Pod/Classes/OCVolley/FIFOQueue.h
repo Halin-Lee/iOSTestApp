@@ -12,4 +12,5 @@
 @interface FIFOQueue : NSObject
 - (id) dequeue;
 - (void) enqueue:(id)obj;
+- (void)clearAll;
 @end

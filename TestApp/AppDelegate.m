@@ -24,7 +24,7 @@
 
 //    [JSPatchDemo test];
 //    [SwiftDemo test];
-//    [RACDemo test];
+    [RACDemo test];
     
     //初始化加载view
     [((SlideMenuNavigationController *)self.window.rootViewController) view];

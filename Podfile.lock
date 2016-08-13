@@ -14,8 +14,12 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BEMCheckBox (1.2.1)
   - DataBindingLib (1.0.0)
   - FBRetainCycleDetector (0.1.2)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
   - Fundamental (0.1.0):
     - AFNetworking
     - KissXML
@@ -44,8 +48,10 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - BEMCheckBox
   - DataBindingLib
   - FBRetainCycleDetector
+  - FMDB
   - Fundamental (from `Fundamental/Fundamental.podspec`)
   - JSPatch
   - KissXML
@@ -59,8 +65,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BEMCheckBox: 264b8b72aa92adbfefa265cc58a0cdb86b207b9f
   DataBindingLib: 69f0e66cc164292ecd1226d6dd1f90695e3d1681
   FBRetainCycleDetector: 45462f9ed1af0cd77224a4cc4e6dacaca47371b4
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Fundamental: b9edee01f9ec49c50426618ea8882bde1bd627fb
   JSPatch: c689ea4dde17441f2f4a95d40dfedb8900c20099
   KissXML: d19dd6dc65e0dc721ba92b3077b8ebdd240f1c1e

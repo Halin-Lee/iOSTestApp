@@ -23,7 +23,7 @@
     [numbers addObject:@5];
 
     
-//    numbers.rac_sequence.
+    
 
 }
 

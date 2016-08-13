@@ -18,6 +18,8 @@
 @property (nonatomic,strong) FIFOQueue *pendingQueue;
 /**当前所有请求*/
 @property (nonatomic,strong) NSMutableArray<VolleyRequest *> *currentRequests;
+/**等待回调的任务*/
+@property (nonatomic,strong) NSMutableArray<id<RequestFinishedDelegate>> *finishedDelegate;
 
 @end
 
@@ -29,10 +31,12 @@
     if (self) {
         _sessionManagerArray = [NSArray arrayWithObjects:[AFHTTPSessionManager manager],[AFHTTPSessionManager manager],[AFHTTPSessionManager manager],[AFHTTPSessionManager manager], nil];
         _pendingQueue = [[FIFOQueue alloc] init];
+        _finishedDelegate = [NSMutableArray array];
         _currentRequests = [NSMutableArray array];
     }
     return self;
 }
+
 
 - (void)add:(VolleyRequest *)request{
     
@@ -50,6 +54,7 @@
         }
     }
     //未找到空闲的manager,排队等候
+    request.state = RequestStateAdded;
     [_pendingQueue enqueue:request];
     
     
@@ -58,8 +63,9 @@
 /**将request交给manager执行*/
 - (void)doRequest:(VolleyRequest *)request withSessionManage:(AFHTTPSessionManager *)manager{
     
+    request.state = RequestStateRunning;
     manager.requestSerializer = request.requestSerializer;
-    manager.responseSerializer = request.responseSerializer;
+    manager.responseSerializer = request;
     
     void (^success)(NSURLSessionDataTask * _Nonnull, id _Nullable) =^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         [_currentRequests removeObject:request];
@@ -69,20 +75,23 @@
         
         if (!request.isCanceled ) {
             //未被取消,调用回调  AFNetworking(也可能是NSURLSession)有个Bug,在task被取消后,仍然可能调用成功回调
-            [request finish];
+            [request setState:RequestStateFinished];
             request.success(task,responseObject);
-            [self takeNext:manager];
+            [self postFinishedWithTask:task request:request];
         }
+        [self takeNext:manager];
     };
     
     void (^failure)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)= ^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [_currentRequests removeObject:request];
         if (!request.isCanceled ) {
             //未被取消,调用回调
-            [request finish];
+            [request setState:RequestStateFinished];
+            request.error = error?:task.error;
             request.failure(task,error);
-            [self takeNext:manager];
+            [self postFinishedWithTask:task request:request];
         }
+        [self takeNext:manager];
     };
     
    switch (request.method) {
@@ -114,11 +123,61 @@
             [_currentRequests removeObject:request];
         }
     }
-   
 }
 
 - (NSInteger)requestCount{
     return _currentRequests.count;
+}
+
+- (void)cancelAll{
+    
+    //清空等待请求
+    [_pendingQueue clearAll];
+    
+    //取消所有请求
+    for (VolleyRequest *request in _currentRequests) {
+        [request cancel];
+    }
+    [_currentRequests removeAllObjects];
+    
+
+}
+
+/**妥协做法,AFNetworkingTaskDidCompleteNotification回调不包含request*/
+- (void)postFinishedWithTask:(NSURLSessionTask *)task request:(VolleyRequest *)request{
+    //添加一个一次性监听
+    __block NSObject *opaqueObject;
+    NSNotificationCenter *notificationCenter = [NSNotificationCenter defaultCenter];
+    opaqueObject = [notificationCenter addObserverForName:AFNetworkingTaskDidCompleteNotification object:task queue:nil usingBlock:^(NSNotification * _Nonnull note) {
+        [notificationCenter removeObserver:opaqueObject];
+        [self didFinishedRequest:request];
+    }];
+}
+
+- (void)didFinishedRequest:(VolleyRequest *)request{
+    @synchronized (_finishedDelegate) {
+        for (id<RequestFinishedDelegate> delegate in _finishedDelegate) {
+            [delegate didFinishedRequest:request];
+        }
+    }
+}
+
+
+- (void)addRequestFinishedDelegate:(id<RequestFinishedDelegate>)delegate{
+    @synchronized (_finishedDelegate) {
+        [_finishedDelegate addObject:delegate];
+    }
+}
+
+- (void)removeRequestFinishedDelegate:(id<RequestFinishedDelegate>)delegate{
+    @synchronized (_finishedDelegate) {
+        [_finishedDelegate addObject:delegate];
+    }
+    
+}
+
+- (NSArray<VolleyRequest *> *)currentRequests{
+    return [NSArray arrayWithArray:_currentRequests];
 }
 
 @end

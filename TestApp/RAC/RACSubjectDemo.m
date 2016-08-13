@@ -20,7 +20,7 @@
     [subject subscribeNext:^(id x) {
         NSLog(@"第一个subscribeNext接受到信号 %@",x);
     }];
-      NSLog(@"第1次sendNext");
+    NSLog(@"第1次sendNext");
     [subject sendNext:@"第1次sendNext"];
 
 

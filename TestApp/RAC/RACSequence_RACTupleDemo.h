@@ -12,4 +12,6 @@
 
 +(void)test;
 
+@property (nonatomic,copy) NSString *text;
+
 @end

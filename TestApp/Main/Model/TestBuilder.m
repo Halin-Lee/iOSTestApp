@@ -8,15 +8,8 @@
 
 #import "TestBuilder.h"
 #import "TestItem.h"
-#import "MessageUITestViewController.h"
-#import "DataBindingPlaceHolderViewController.h"
-#import "PPMainViewController.h"
-#import "JSPatchDemoViewController.h"
-#import "MediatorDemoLib.h"
-#import "RouterFirstDemoViewController.h"
-#import "AutoEventTrackingDemoViewController.h"
-#import "FBRetainCycleDetectorDemoViewController.h"
-#import "AccountStoreDemoViewController.h"
+
+
 @interface TestBuilder ()
 
 @property (nonatomic,strong) NSMutableArray *testArray;
@@ -37,36 +30,39 @@
 - (NSArray *)build{
     
     NSString *messageUITestGroupName = @"MessageUI测试";
-    [self addWithTestGroup:messageUITestGroupName name:messageUITestGroupName clazz:[MessageUITestViewController class]];
+    [self addWithTestGroup:messageUITestGroupName name:messageUITestGroupName clazz:NSClassFromString(@"MessageUITestViewController")];
     
     
     NSString *dataBindingTestGroupName = @"DataBinding测试";
-    [self addWithTestGroup:dataBindingTestGroupName name:dataBindingTestGroupName clazz:[DataBindingPlaceHolderViewController class]];
+    [self addWithTestGroup:dataBindingTestGroupName name:dataBindingTestGroupName clazz:NSClassFromString(@"DataBindingPlaceHolderViewController")];
     
     NSString *ppTestGroupName = @"ProjectPrestudy";
-    [self addWithTestGroup:ppTestGroupName name:ppTestGroupName clazz:[PPMainViewController class]];
+    [self addWithTestGroup:ppTestGroupName name:ppTestGroupName clazz:NSClassFromString(@"PPMainViewController")];
     
     NSString *jsParchGroupName = @"JSPatch Demo";
-    [self addWithTestGroup:jsParchGroupName name:jsParchGroupName clazz:[JSPatchDemoViewController class]];
+    [self addWithTestGroup:jsParchGroupName name:jsParchGroupName clazz:NSClassFromString(@"JSPatchDemoViewController")];
     
     NSString *mediatorDemoGroupName = @"Mediator Demo";
-    [self addWithTestGroup:mediatorDemoGroupName name:@"Present Demo" clazz:[MediatorDemoPresentViewController class]];
-    [self addWithTestGroup:mediatorDemoGroupName name:@"Push Demo" clazz:[MediatorDemoPushViewController class]];
+    [self addWithTestGroup:mediatorDemoGroupName name:@"Present Demo" clazz:NSClassFromString(@"MediatorDemoPresentViewController")];
+    [self addWithTestGroup:mediatorDemoGroupName name:@"Push Demo" clazz:NSClassFromString(@"MediatorDemoPushViewController")];
     
     
     NSString *routerGroupName = @"Router Demo";
-    [self addWithTestGroup:routerGroupName name:routerGroupName clazz:[RouterFirstDemoViewController class]];
+    [self addWithTestGroup:routerGroupName name:routerGroupName clazz:NSClassFromString(@"RouterFirstDemoViewController")];
     
     
     
     NSString *autoEventTrackingGroupName = @"Auto Event Tracking Demo";
-    [self addWithTestGroup:autoEventTrackingGroupName name:autoEventTrackingGroupName clazz:[AutoEventTrackingDemoViewController class]];
+    [self addWithTestGroup:autoEventTrackingGroupName name:autoEventTrackingGroupName clazz:NSClassFromString(@"AutoEventTrackingDemoViewController")];
     
     NSString *retainCycleDetectorGroupName = @"FB Retain Cycle Detector";
-    [self addWithTestGroup:retainCycleDetectorGroupName name:retainCycleDetectorGroupName clazz:[FBRetainCycleDetectorDemoViewController class]];
+    [self addWithTestGroup:retainCycleDetectorGroupName name:retainCycleDetectorGroupName clazz:NSClassFromString(@"FBRetainCycleDetectorDemoViewController")];
     
     NSString *accountStoreGroupName = @"Account Store Demo";
-    [self addWithTestGroup:accountStoreGroupName name:accountStoreGroupName clazz:[AccountStoreDemoViewController class]];
+    [self addWithTestGroup:accountStoreGroupName name:accountStoreGroupName clazz:NSClassFromString(@"AccountStoreDemoViewController")];
+    
+    NSString *requestSimulatorGroupName = @"Request Simulator";
+    [self addWithTestGroup:requestSimulatorGroupName name:requestSimulatorGroupName clazz:NSClassFromString(@"RequestSimulatorViewController")];
     
     return [_testArray copy];
 }

@@ -42,4 +42,9 @@
     //this method automatically adds to the end of the array
 }
 
+
+- (void)clearAll{
+    [_queue removeAllObjects];
+}
+
 @end

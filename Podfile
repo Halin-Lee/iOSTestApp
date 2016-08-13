@@ -20,6 +20,10 @@ def basePods
   pod 'FBRetainCycleDetector'
 
   pod 'AFNetworking'
+  
+  pod 'FMDB'
+  
+  pod 'BEMCheckBox'
 end
 target 'TestApp' do
   basePods

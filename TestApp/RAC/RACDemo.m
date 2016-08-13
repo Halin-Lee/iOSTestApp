@@ -8,17 +8,25 @@
 
 #import "RACDemo.h"
 #import "RACSignalDemo.h"
+#import "RACEXTScopeDemo.h"
 #import "RACSubjectDemo.h"
 #import "RACReplaySubjectDemo.h"
 #import "RACSequence_RACTupleDemo.h"
+#import "RACCommandDemo.h"
+
+#import "TestApp-Swift.h"
+
 
 @implementation RACDemo
 
 + (void)test{
 //    [RACSignalDemo test];
+//    [RACSignalSwiftDemo test];
+//    [RACEXTScopeDemo test];
 //    [RACSubjectDemo test];
 //    [RACReplaySubjectDemo test];
-    [RACSequence_RACTupleDemo test];
+//    [RACSequence_RACTupleDemo test];
+    [RACCommandDemo test];
     
 }
 
