@@ -26,7 +26,7 @@
 //    [RACSubjectDemo test];
 //    [RACReplaySubjectDemo test];
 //    [RACSequence_RACTupleDemo test];
-    [RACCommandDemo test];
+//    [RACCommandDemo test];
     
 }
 

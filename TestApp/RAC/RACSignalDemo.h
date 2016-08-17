@@ -19,5 +19,7 @@
 
 @property (nonatomic,assign) BOOL isRight;
 
+@property (nonatomic,strong) id releaseTest;
+
 
 @end

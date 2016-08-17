@@ -6,7 +6,7 @@ platform :ios, '8.0'
 def basePods
   pod 'Fundamental', :path => 'Fundamental/Fundamental.podspec'
 
-  pod 'DataBindingLib'
+#  pod 'DataBindingLib'
   pod 'PlaceHolderViewLib'
 
   pod 'JSPatch'

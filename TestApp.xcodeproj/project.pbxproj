@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BBA3BC9EB9ACC226F4A0AB40 /* Pods_TestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536662EB2E1C1746A9E59919 /* Pods_TestApp.framework */; };
 		D9FE61F09A8978A2D34C3CC9 /* Pods_TestApp_TestAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC599F4788D84EC96587A0E3 /* Pods_TestApp_TestAppTests.framework */; };
+		DA031F6F1D63058C00D657FA /* RACDemoEventHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = DA031F6E1D63058C00D657FA /* RACDemoEventHandler.m */; };
+		DA031F721D6308FF00D657FA /* UIViewController(MVVM).m in Sources */ = {isa = PBXBuildFile; fileRef = DA031F711D6308FF00D657FA /* UIViewController(MVVM).m */; };
 		DA2A44A71C85727300CC2F3F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A41C85727300CC2F3F /* MenuViewController.m */; };
 		DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44A61C85727300CC2F3F /* SlideMenuRootViewController.m */; };
 		DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2A44AA1C8572F100CC2F3F /* LeftSideViewController.m */; };
@@ -78,6 +80,14 @@
 		DAE18CAB1D5C6EB1000D1083 /* RACEXTScopeDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CAA1D5C6EB1000D1083 /* RACEXTScopeDemo.m */; };
 		DAE18CAD1D5DE4B8000D1083 /* RACSignalSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CAC1D5DE4B8000D1083 /* RACSignalSwiftDemo.swift */; };
 		DAE18CB01D5EFBBB000D1083 /* RACCommandDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CAF1D5EFBBB000D1083 /* RACCommandDemo.m */; };
+		DAE18CB41D605CB0000D1083 /* RACDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CB31D605CB0000D1083 /* RACDemoViewController.m */; };
+		DAE18CB61D605CCD000D1083 /* RACDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAE18CB51D605CCD000D1083 /* RACDemoViewController.xib */; };
+		DAE18CBD1D6063C9000D1083 /* RACDemoLoginSimulator.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CBC1D6063C9000D1083 /* RACDemoLoginSimulator.m */; };
+		DAE18CC01D6063E6000D1083 /* RACDemoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CBF1D6063E6000D1083 /* RACDemoViewModel.m */; };
+		DAE18CC91D606983000D1083 /* DataBindingUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CC41D606983000D1083 /* DataBindingUtil.m */; };
+		DAE18CCA1D606983000D1083 /* UIView+DataBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CC61D606983000D1083 /* UIView+DataBinding.m */; };
+		DAE18CCB1D606983000D1083 /* ViewBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CC81D606983000D1083 /* ViewBinder.m */; };
+		DAE18CCE1D607927000D1083 /* SafetyObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE18CCD1D607927000D1083 /* SafetyObserver.m */; };
 		DAF0726A1D50A825005C33B7 /* RequestSimulatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF072681D50A825005C33B7 /* RequestSimulatorViewController.m */; };
 		DAF0726B1D50A825005C33B7 /* RequestSimulatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAF072691D50A825005C33B7 /* RequestSimulatorViewController.xib */; };
 		DAF0726E1D50A90D005C33B7 /* RequestSimulatorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF0726D1D50A90D005C33B7 /* RequestSimulatorViewModel.m */; };
@@ -107,6 +117,10 @@
 		5B508512A2EDAD268E9478AD /* Pods-TestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp/Pods-TestApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5E8C8563B05DAC88DC988D53 /* Pods-TestApp-TestAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp-TestAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp-TestAppTests/Pods-TestApp-TestAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0911F73E955B45A204B37AB /* Pods-TestApp-TestAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestApp-TestAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestApp-TestAppTests/Pods-TestApp-TestAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		DA031F6D1D63058C00D657FA /* RACDemoEventHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDemoEventHandler.h; sourceTree = "<group>"; };
+		DA031F6E1D63058C00D657FA /* RACDemoEventHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDemoEventHandler.m; sourceTree = "<group>"; };
+		DA031F701D6308FF00D657FA /* UIViewController(MVVM).h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController(MVVM).h"; sourceTree = "<group>"; };
+		DA031F711D6308FF00D657FA /* UIViewController(MVVM).m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController(MVVM).m"; sourceTree = "<group>"; };
 		DA2A44A31C85727300CC2F3F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		DA2A44A41C85727300CC2F3F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		DA2A44A51C85727300CC2F3F /* SlideMenuRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlideMenuRootViewController.h; sourceTree = "<group>"; };
@@ -218,6 +232,22 @@
 		DAE18CAC1D5DE4B8000D1083 /* RACSignalSwiftDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RACSignalSwiftDemo.swift; sourceTree = "<group>"; };
 		DAE18CAE1D5EFBBB000D1083 /* RACCommandDemo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACCommandDemo.h; sourceTree = "<group>"; };
 		DAE18CAF1D5EFBBB000D1083 /* RACCommandDemo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACCommandDemo.m; sourceTree = "<group>"; };
+		DAE18CB21D605CB0000D1083 /* RACDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDemoViewController.h; sourceTree = "<group>"; };
+		DAE18CB31D605CB0000D1083 /* RACDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDemoViewController.m; sourceTree = "<group>"; };
+		DAE18CB51D605CCD000D1083 /* RACDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RACDemoViewController.xib; sourceTree = "<group>"; };
+		DAE18CBB1D6063C9000D1083 /* RACDemoLoginSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDemoLoginSimulator.h; sourceTree = "<group>"; };
+		DAE18CBC1D6063C9000D1083 /* RACDemoLoginSimulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDemoLoginSimulator.m; sourceTree = "<group>"; };
+		DAE18CBE1D6063E6000D1083 /* RACDemoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACDemoViewModel.h; sourceTree = "<group>"; };
+		DAE18CBF1D6063E6000D1083 /* RACDemoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACDemoViewModel.m; sourceTree = "<group>"; };
+		DAE18CC21D606983000D1083 /* DataBindingLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingLib.h; sourceTree = "<group>"; };
+		DAE18CC31D606983000D1083 /* DataBindingUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBindingUtil.h; sourceTree = "<group>"; };
+		DAE18CC41D606983000D1083 /* DataBindingUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBindingUtil.m; sourceTree = "<group>"; };
+		DAE18CC51D606983000D1083 /* UIView+DataBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DataBinding.h"; sourceTree = "<group>"; };
+		DAE18CC61D606983000D1083 /* UIView+DataBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DataBinding.m"; sourceTree = "<group>"; };
+		DAE18CC71D606983000D1083 /* ViewBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewBinder.h; sourceTree = "<group>"; };
+		DAE18CC81D606983000D1083 /* ViewBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewBinder.m; sourceTree = "<group>"; };
+		DAE18CCC1D607927000D1083 /* SafetyObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafetyObserver.h; sourceTree = "<group>"; };
+		DAE18CCD1D607927000D1083 /* SafetyObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafetyObserver.m; sourceTree = "<group>"; };
 		DAF072671D50A825005C33B7 /* RequestSimulatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestSimulatorViewController.h; sourceTree = "<group>"; };
 		DAF072681D50A825005C33B7 /* RequestSimulatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestSimulatorViewController.m; sourceTree = "<group>"; };
 		DAF072691D50A825005C33B7 /* RequestSimulatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestSimulatorViewController.xib; sourceTree = "<group>"; };
@@ -466,6 +496,7 @@
 		DA819FE01C9A8740007A6C56 /* RAC */ = {
 			isa = PBXGroup;
 			children = (
+				DAE18CB11D605C4E000D1083 /* Demo */,
 				DA819FF21C9A9971007A6C56 /* RACDemo.h */,
 				DA819FF31C9A9971007A6C56 /* RACDemo.m */,
 				DA819FF51C9AA89B007A6C56 /* RACSignalDemo.h */,
@@ -599,6 +630,48 @@
 			path = Demo;
 			sourceTree = "<group>";
 		};
+		DAE18CB11D605C4E000D1083 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				DAE18CBA1D6063C9000D1083 /* Service */,
+				DAE18CB21D605CB0000D1083 /* RACDemoViewController.h */,
+				DAE18CB31D605CB0000D1083 /* RACDemoViewController.m */,
+				DAE18CB51D605CCD000D1083 /* RACDemoViewController.xib */,
+				DAE18CBE1D6063E6000D1083 /* RACDemoViewModel.h */,
+				DAE18CBF1D6063E6000D1083 /* RACDemoViewModel.m */,
+				DA031F6D1D63058C00D657FA /* RACDemoEventHandler.h */,
+				DA031F6E1D63058C00D657FA /* RACDemoEventHandler.m */,
+				DA031F701D6308FF00D657FA /* UIViewController(MVVM).h */,
+				DA031F711D6308FF00D657FA /* UIViewController(MVVM).m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		DAE18CBA1D6063C9000D1083 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DAE18CBB1D6063C9000D1083 /* RACDemoLoginSimulator.h */,
+				DAE18CBC1D6063C9000D1083 /* RACDemoLoginSimulator.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DAE18CC11D606983000D1083 /* DataBindingLib */ = {
+			isa = PBXGroup;
+			children = (
+				DAE18CC21D606983000D1083 /* DataBindingLib.h */,
+				DAE18CC31D606983000D1083 /* DataBindingUtil.h */,
+				DAE18CC41D606983000D1083 /* DataBindingUtil.m */,
+				DAE18CC51D606983000D1083 /* UIView+DataBinding.h */,
+				DAE18CC61D606983000D1083 /* UIView+DataBinding.m */,
+				DAE18CC71D606983000D1083 /* ViewBinder.h */,
+				DAE18CC81D606983000D1083 /* ViewBinder.m */,
+				DAE18CCC1D607927000D1083 /* SafetyObserver.h */,
+				DAE18CCD1D607927000D1083 /* SafetyObserver.m */,
+			);
+			path = DataBindingLib;
+			sourceTree = "<group>";
+		};
 		DAF072641D50A7CD005C33B7 /* RequestSimulator */ = {
 			isa = PBXGroup;
 			children = (
@@ -651,6 +724,7 @@
 		FFDA44411BA7B658009C1E34 /* TestApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAE18CC11D606983000D1083 /* DataBindingLib */,
 				DAAD557F1D0FCD5D00823BCD /* FMDB */,
 				DAA072071CC60DA800DEB3FE /* ACAccountStore */,
 				DA80EF4D1CC0877100AD462A /* FBRetainCycleDetectorDemo */,
@@ -840,6 +914,7 @@
 				DA6F66681C3E6A250006D8A3 /* DataBindingPlaceHolderView.xib in Resources */,
 				DAA591D01C8EC5BC002D5CD4 /* JSPatchDemoView.xib in Resources */,
 				DAA0720C1CC60DC100DEB3FE /* AccountStoreDemoViewController.xib in Resources */,
+				DAE18CB61D605CCD000D1083 /* RACDemoViewController.xib in Resources */,
 				DA9BEEC11D51DE5A0040C43D /* RequestSimulatorCheckBox.xib in Resources */,
 				DA6F666F1C3E6E2D0006D8A3 /* TestView.xib in Resources */,
 				FFDA44501BA7B659009C1E34 /* Images.xcassets in Resources */,
@@ -986,20 +1061,26 @@
 			files = (
 				DA59CD591C8FC26800DDC91A /* RSA.m in Sources */,
 				DA6F66691C3E6A250006D8A3 /* DataBindingPlaceHolderViewController.m in Sources */,
+				DAE18CC01D6063E6000D1083 /* RACDemoViewModel.m in Sources */,
 				DA59CD541C8FC26800DDC91A /* JPLoader.m in Sources */,
 				DA819FF41C9A9971007A6C56 /* RACDemo.m in Sources */,
 				DA779AE51CBE499A00373B73 /* AutoEventTrackingDemoTableViewCell.m in Sources */,
+				DAE18CCE1D607927000D1083 /* SafetyObserver.m in Sources */,
+				DAE18CBD1D6063C9000D1083 /* RACDemoLoginSimulator.m in Sources */,
 				DAE18CB01D5EFBBB000D1083 /* RACCommandDemo.m in Sources */,
 				FFDA44481BA7B659009C1E34 /* AppDelegate.m in Sources */,
 				DAA0720B1CC60DC100DEB3FE /* AccountStoreDemoViewController.m in Sources */,
+				DA031F721D6308FF00D657FA /* UIViewController(MVVM).m in Sources */,
 				DA819F9A1C9A5559007A6C56 /* SlideMenuNavigationController.m in Sources */,
 				DA59CD561C8FC26800DDC91A /* mztools.c in Sources */,
 				DA819FF71C9AA89B007A6C56 /* RACSignalDemo.m in Sources */,
 				DAE18CAB1D5C6EB1000D1083 /* RACEXTScopeDemo.m in Sources */,
+				DAE18CB41D605CB0000D1083 /* RACDemoViewController.m in Sources */,
 				DA2A44AB1C8572F100CC2F3F /* LeftSideViewController.m in Sources */,
 				DAF0726E1D50A90D005C33B7 /* RequestSimulatorViewModel.m in Sources */,
 				DA86DC2A1C6495C6008605E1 /* PPMainViewController.m in Sources */,
 				DA80EF511CC0879200AD462A /* FBRetainCycleDetectorDemoViewController.m in Sources */,
+				DAE18CC91D606983000D1083 /* DataBindingUtil.m in Sources */,
 				DAAD55821D0FCD7E00823BCD /* FMDBDemo.m in Sources */,
 				DA819FEE1C9A9461007A6C56 /* SwiftDemo.m in Sources */,
 				DA819FF11C9A9911007A6C56 /* JSPatchDemo.m in Sources */,
@@ -1015,8 +1096,10 @@
 				DAC99CA61CA23BEA00FB436D /* MediatorDemoPresentViewController.m in Sources */,
 				DA6F66581C3E6A050006D8A3 /* TestItem.m in Sources */,
 				DA2A44A81C85727300CC2F3F /* SlideMenuRootViewController.m in Sources */,
+				DAE18CCA1D606983000D1083 /* UIView+DataBinding.m in Sources */,
 				DA819FE71C9A8DE9007A6C56 /* ObjectiveCToSwift.swift in Sources */,
 				DA59CD5A1C8FC26800DDC91A /* ZipArchive.m in Sources */,
+				DAE18CCB1D606983000D1083 /* ViewBinder.m in Sources */,
 				DA819FFD1C9AB640007A6C56 /* RACSubjectDemo.m in Sources */,
 				DA86DC371C64A390008605E1 /* PPPhoneFileBrowserViewController.m in Sources */,
 				DAF0726A1D50A825005C33B7 /* RequestSimulatorViewController.m in Sources */,
@@ -1028,6 +1111,7 @@
 				FFDA446E1BA7B767009C1E34 /* MainViewController.m in Sources */,
 				DA59CD581C8FC26800DDC91A /* zip.c in Sources */,
 				DA81A0001C9AB8EB007A6C56 /* RACReplaySubjectDemo.m in Sources */,
+				DA031F6F1D63058C00D657FA /* RACDemoEventHandler.m in Sources */,
 				DA819FEA1C9A8DFD007A6C56 /* SwiftToObjectiveC.m in Sources */,
 				DAE18CAD1D5DE4B8000D1083 /* RACSignalSwiftDemo.swift in Sources */,
 				DA6F666A1C3E6A250006D8A3 /* DataBindingPlaceHolderRootView.m in Sources */,

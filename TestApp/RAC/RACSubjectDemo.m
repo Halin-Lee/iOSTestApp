@@ -23,7 +23,7 @@
     NSLog(@"第1次sendNext");
     [subject sendNext:@"第1次sendNext"];
 
-
+    
     //订阅失败
     [subject subscribeError:^(NSError *error) {
         NSLog(@"第一个subscribeError订阅 %@",error);

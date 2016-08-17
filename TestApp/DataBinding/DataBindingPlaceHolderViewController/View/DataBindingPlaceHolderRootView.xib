@@ -21,14 +21,22 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="BindType" value="DataBindingPlaceHolderbTestModel"/>
                     </userDefinedRuntimeAttributes>
                 </label>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-9S-0xh" customClass="PHTestView">
-                    <rect key="frame" x="150" y="0.0" width="300" height="300"/>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sgb-9S-0xh" customClass="PHTestView">
+                    <rect key="frame" x="157" y="307" width="300" height="300"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="300" id="d0G-xV-mvH"/>
                         <constraint firstAttribute="width" constant="300" id="gio-c0-wYm"/>
                     </constraints>
                 </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jjs-dB-Yp3">
+                    <rect key="frame" x="108" y="183" width="97" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="ReverseBindPath:string"/>
+                    </userDefinedRuntimeAttributes>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>

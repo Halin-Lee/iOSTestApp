@@ -26,7 +26,7 @@
     DataBindingPlaceHolderbTestModel *testModel = [[DataBindingPlaceHolderbTestModel alloc] init];
     [[DataBindingUtil dataBindingUtil] bindModel:testModel forView:self.view];
     
-    testModel.string = @"test";
+    testModel.string = @"通过修改Model修改string";
     self.testModel = testModel;
     
 
@@ -35,7 +35,7 @@
     
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.testModel.string = @"123";
+        self.testModel.string = @"延迟通过修改Model修改string成功";
 //        self.testModel = nil;
     });
     

@@ -138,7 +138,7 @@
     NSLog(@"isRight? %@",demo.isRight ? @"YES" : @"NO");
     demo = nil;
     
-    NSLog(@"/*---测试5.combine合并信号-------------------*/");
+    NSLog(@"/*---测试5.combine组合信号-------------------*/");
     
     RACSignal *leftSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
         NSLog(@"RACSignal left 被订阅");
@@ -168,17 +168,22 @@
     }];
     
     //合并信号
-    RACSignal *combineSignal = [RACSignal combineLatest:@[leftSignal,rightSignal] reduce:^id(NSNumber *left, NSNumber *right){
-        return @(left.integerValue + right.integerValue > 3);
-    }];
+    //如果不指定reduce方式,则合并信号将用RACTuple的方式,返回,否则使用reduce返回
+    RACSignal *combineSignal = [RACSignal combineLatest:@[leftSignal,rightSignal]];
+//    RACSignal *combineSignal = [RACSignal combineLatest:@[leftSignal,rightSignal] reduce:^id(NSNumber *left, NSNumber *right){
+//        return @(left.integerValue + right.integerValue > 3);
+//    }];
     
     demo = [[RACSignalDemo alloc] init];
-    demo.name = @"测试5.combine合并信号";
     @weakify(demo)
     [combineSignal subscribeNext:^(NSNumber *x) {
         @strongify(demo)
-        demo.isRight = x.boolValue;
-        NSLog(@"isRight? %@",demo.isRight ? @"YES" : @"NO");
+        demo.releaseTest = x;
+        NSLog(@"combine信号收到信息 %@",x);
+    } error:^(NSError *error) {
+        NSLog(@"combine信号收到错误 %@",error);
+    } completed:^{
+        NSLog(@"combine信号收到完成");
     }];
     demo = nil;
     
@@ -367,8 +372,50 @@
     [demo observeTest];
     demo = nil;
     
-    NSLog(@"/*---测试10.merge-------------------*/");
+    NSLog(@"/*---测试10.merge合并信号-------------------*/");
+    leftSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSLog(@"RACSignal left 被订阅");
+        
+        [subscriber sendNext:@4];
+        [subscriber sendNext:@3];
+        [subscriber sendNext:@2];
+        [subscriber sendNext:@1];
+        
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"信号销毁");
+        }];
+    }];
     
+    rightSignal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSLog(@"RACSignal right 被订阅");
+        
+        [subscriber sendNext:@1];
+        [subscriber sendNext:@2];
+        [subscriber sendNext:@3];
+        [subscriber sendNext:@4];
+        [subscriber sendCompleted];
+        return [RACDisposable disposableWithBlock:^{
+            NSLog(@"信号销毁");
+        }];
+    }];
+    
+    //合并信号,和组合信号最大的区别为,combine 主要处理信号组合,通过组合得到另一个信息,而 merge 只是简单将两个信号合并在一起,其中任何一个的 next 调用,都会调用 merge 的 next,且内容和原信号一样
+    RACSignal *mergeSignal = [RACSignal merge:@[leftSignal,rightSignal]];
+    
+    RACSignalDemo *mergeDemo = [[RACSignalDemo alloc] init];
+    mergeDemo.name = @"测试10.merge";
+    @weakify(mergeDemo)
+    [mergeSignal subscribeNext:^(NSNumber *x) {
+        @strongify(mergeDemo)
+        mergeDemo.releaseTest = x;
+        NSLog(@"merge信号收到信息 %@",x);
+    } error:^(NSError *error) {
+        NSLog(@"merge信号收到错误 %@",error);
+    } completed:^{
+        NSLog(@"merge信号收到完成");
+    }];
+    mergeDemo = nil;
     
     
     NSLog(@"/*---测试结束-------------------*/");

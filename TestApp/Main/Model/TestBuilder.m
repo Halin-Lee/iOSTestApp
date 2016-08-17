@@ -64,6 +64,9 @@
     NSString *requestSimulatorGroupName = @"Request Simulator";
     [self addWithTestGroup:requestSimulatorGroupName name:requestSimulatorGroupName clazz:NSClassFromString(@"RequestSimulatorViewController")];
     
+    NSString *racDemoGroupName = @"RAC Demo";
+    [self addWithTestGroup:racDemoGroupName name:racDemoGroupName clazz:NSClassFromString(@"RACDemoViewController")];
+    
     return [_testArray copy];
 }
 
