@@ -14,14 +14,11 @@
 #import "RACSequence_RACTupleDemo.h"
 #import "RACCommandDemo.h"
 
-#import "TestApp-Swift.h"
-
 
 @implementation RACDemo
 
 + (void)test{
 //    [RACSignalDemo test];
-//    [RACSignalSwiftDemo test];
 //    [RACEXTScopeDemo test];
 //    [RACSubjectDemo test];
 //    [RACReplaySubjectDemo test];

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "SwiftDemo.h"
 #import "JSPatchDemo.h"
 #import "RACDemo.h"
 #import "SlideMenuNavigationController.h"
@@ -23,7 +22,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 //    [JSPatchDemo test];
-//    [SwiftDemo test];
     [RACDemo test];
     
     //初始化加载view
