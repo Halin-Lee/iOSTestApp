@@ -25,7 +25,11 @@ def basePods
   
   pod 'BEMCheckBox'
 
+  pod 'Realm'
+
   pod ‘NUI’
+  
+  pod 'SCRecorder'
 end
 target 'TestApp' do
   basePods
@@ -34,4 +38,8 @@ target 'TestApp' do
   end
 end
 
+
+target 'iOS System Demo' do
+    basePods
+end
 

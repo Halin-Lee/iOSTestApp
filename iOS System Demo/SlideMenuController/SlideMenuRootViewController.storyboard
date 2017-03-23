@@ -1,20 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bHO-ZN-kYm">
-    <device id="retina4_0" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="bHO-ZN-kYm">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
-        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="NavigationA" storyboardIdentifier="NavigationA" id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -26,12 +22,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiD-h7-wIW">
                                 <rect key="frame" x="16" y="20" width="568" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="klt-Wd-Zg2">
                                 <rect key="frame" x="0.0" y="53" width="600" height="494"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" id="wPt-1P-6ce">
                                         <rect key="frame" x="0.0" y="22" width="600" height="44"/>
@@ -48,15 +44,15 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="WiD-h7-wIW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dee-xf-sBe" userLabel="Label水平居中"/>
                             <constraint firstItem="WiD-h7-wIW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="O0e-v9-Yp4" userLabel="Label左对齐容器"/>
                             <constraint firstItem="WiD-h7-wIW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Oz4-BP-Cz1" userLabel="Label顶对齐容器"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XFc-Zi-l0V" userLabel="Table水平居中"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="klt-Wd-Zg2" secondAttribute="bottom" constant="53" id="a66-fs-OnX" userLabel="Table底对齐容器"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="aUK-rb-L1e" userLabel="Table左对齐容器"/>
                             <constraint firstItem="klt-Wd-Zg2" firstAttribute="top" secondItem="WiD-h7-wIW" secondAttribute="bottom" id="gq2-Qy-ADk" userLabel="Table在Label下方"/>
+                            <constraint firstItem="klt-Wd-Zg2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mWh-oT-RqY" userLabel="Table垂直居中"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CMH-7x-hjd"/>
@@ -66,50 +62,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2728" y="685"/>
+            <point key="canvasLocation" x="1975" y="685"/>
         </scene>
-        <!--Slide Menu Navigation Controller-->
+        <!--Slide Menu Root View Controller-->
         <scene sceneID="Fd8-m2-RZG">
             <objects>
-                <viewController id="bHO-ZN-kYm" customClass="SlideMenuNavigationController" sceneMemberID="viewController">
+                <viewController id="bHO-ZN-kYm" customClass="SlideMenuRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SQf-Dt-AdU"/>
                         <viewControllerLayoutGuide type="bottom" id="tsh-JZ-BeQ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="YUw-1i-i0a">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5jm-98-Bss">
-                                <rect key="frame" x="199" y="349" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PZ9-dQ-t11" userLabel="MainViewController">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PZ9-dQ-t11" userLabel="MainViewController">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="OCK-he-j5G" appends="YES" id="ICk-fC-uqa"/>
                                     <segue destination="Muw-Qb-yqh" kind="embed" id="Qt0-71-cFa"/>
                                 </connections>
                             </containerView>
-                            <containerView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qlg-H6-2cf" userLabel="LeftSideViewController">
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qlg-H6-2cf" userLabel="LeftSideViewController">
                                 <rect key="frame" x="-180" y="0.0" width="180" height="600"/>
                                 <connections>
                                     <segue destination="7Pc-4c-2qV" kind="embed" id="fqC-Yy-GmQ"/>
                                 </connections>
                             </containerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.01516742905" green="0.36371996039999999" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.01516742905" green="0.36371996039999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="PZ9-dQ-t11" firstAttribute="height" secondItem="YUw-1i-i0a" secondAttribute="height" id="4OC-L8-nAZ"/>
                             <constraint firstItem="PZ9-dQ-t11" firstAttribute="width" secondItem="YUw-1i-i0a" secondAttribute="width" id="7Xw-vH-jbD"/>
-                            <constraint firstItem="5jm-98-Bss" firstAttribute="leading" secondItem="YUw-1i-i0a" secondAttribute="leadingMargin" constant="183" id="9im-x7-e9X"/>
                             <constraint firstItem="Qlg-H6-2cf" firstAttribute="centerY" secondItem="YUw-1i-i0a" secondAttribute="centerY" id="DsD-87-xlU"/>
                             <constraint firstItem="Qlg-H6-2cf" firstAttribute="width" secondItem="YUw-1i-i0a" secondAttribute="width" multiplier="0.3" id="ZJd-0U-YZ4"/>
                             <constraint firstItem="Qlg-H6-2cf" firstAttribute="height" secondItem="YUw-1i-i0a" secondAttribute="height" id="bWg-Fa-PZR"/>
                             <constraint firstItem="PZ9-dQ-t11" firstAttribute="centerY" secondItem="YUw-1i-i0a" secondAttribute="centerY" id="c1v-PW-xwB"/>
                             <constraint firstItem="Qlg-H6-2cf" firstAttribute="trailing" secondItem="YUw-1i-i0a" secondAttribute="leading" id="e1R-Lb-DXe"/>
                             <constraint firstItem="PZ9-dQ-t11" firstAttribute="centerX" secondItem="YUw-1i-i0a" secondAttribute="centerX" id="meQ-gw-6oU"/>
-                            <constraint firstItem="5jm-98-Bss" firstAttribute="top" secondItem="SQf-Dt-AdU" secondAttribute="bottom" constant="329" id="yfo-r3-hvE"/>
                         </constraints>
                     </view>
                     <connections>
@@ -152,17 +142,17 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDR-8l-lXX">
                                 <rect key="frame" x="65" y="49" width="46" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="About" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evc-nC-rzC">
                                 <rect key="frame" x="64" y="132" width="47" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="evc-nC-rzC" firstAttribute="leading" secondItem="jlO-jw-Mis" secondAttribute="leadingMargin" id="3Ze-MF-S3m"/>
                             <constraint firstItem="BDR-8l-lXX" firstAttribute="leading" secondItem="jlO-jw-Mis" secondAttribute="leadingMargin" id="vIW-10-4S4"/>
@@ -177,26 +167,42 @@
             </objects>
             <point key="canvasLocation" x="930" y="-166"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wY3-hi-HZk">
+            <objects>
+                <navigationController restorationIdentifier="NavigationB" storyboardIdentifier="NavigationB" id="xnp-pY-df9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="l50-Eb-6u6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DQT-D0-3LO" kind="relationship" relationship="rootViewController" id="pmL-XG-xXr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kQp-uc-oMu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="1509"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="ZVY-L7-kAf">
             <objects>
-                <viewController restorationIdentifier="NavigationB" storyboardIdentifier="NavigationB" id="DQT-D0-3LO" sceneMemberID="viewController">
+                <viewController id="DQT-D0-3LO" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vKl-9C-4Uz"/>
                         <viewControllerLayoutGuide type="bottom" id="Lib-EN-mVk"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="KPC-ek-Kwf">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="这是一个用StoryBoard实现侧拉菜单的例子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-Ao-iQc" userLabel="about">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是一个用StoryBoard实现侧拉菜单的例子" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuS-Ao-iQc" userLabel="about">
                                 <rect key="frame" x="0.0" y="579" width="600" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wuS-Ao-iQc" firstAttribute="width" secondItem="KPC-ek-Kwf" secondAttribute="width" id="2ER-gp-bRK"/>
                             <constraint firstItem="wuS-Ao-iQc" firstAttribute="centerX" secondItem="KPC-ek-Kwf" secondAttribute="centerX" id="deb-7a-T62"/>
@@ -212,12 +218,12 @@
         <!--Navigation Controller-->
         <scene sceneID="ShO-bE-vSc">
             <objects>
-                <navigationController id="Muw-Qb-yqh" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="NavigationA" storyboardIdentifier="NavigationA" id="Muw-Qb-yqh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="H4g-eO-7jw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fg0-Jf-Oj5"/>

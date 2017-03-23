@@ -42,6 +42,10 @@ PODS:
   - ReactiveCocoa/no-arc (2.5)
   - ReactiveCocoa/UI (2.5):
     - ReactiveCocoa/Core
+  - Realm (2.4.2):
+    - Realm/Headers (= 2.4.2)
+  - Realm/Headers (2.4.2)
+  - SCRecorder (2.7.0)
 
 DEPENDENCIES:
   - AFNetworking
@@ -55,6 +59,8 @@ DEPENDENCIES:
   - NUI
   - PlaceHolderViewLib
   - ReactiveCocoa (~> 2.5)
+  - Realm
+  - SCRecorder
 
 EXTERNAL SOURCES:
   Fundamental:
@@ -73,7 +79,9 @@ SPEC CHECKSUMS:
   NUIParse: 2e3885ba7807477266396292626bd387d34c2338
   PlaceHolderViewLib: abd94449271164424bd64b6f8b7945de8f5b7302
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
+  Realm: d27b758e12d62a3371879a065d4c40aa212c5a54
+  SCRecorder: bbb521dbc222908876ec9cd9156bbc8a893bed44
 
-PODFILE CHECKSUM: 649614659c16854602ecda3b15ee5a004084824c
+PODFILE CHECKSUM: 959b84006acf0ec01e59718a762752ad2b783246
 
 COCOAPODS: 1.1.1

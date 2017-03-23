@@ -66,6 +66,7 @@
     
     NSString *racDemoGroupName = @"RAC Demo";
     [self addWithTestGroup:racDemoGroupName name:racDemoGroupName clazz:NSClassFromString(@"RACDemoViewController")];
+    [self addWithTestGroup:racDemoGroupName name:racDemoGroupName clazz:NSClassFromString(@"RACSampleViewController")];
     
     return [_testArray copy];
 }
