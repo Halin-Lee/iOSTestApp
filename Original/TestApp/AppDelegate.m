@@ -11,6 +11,8 @@
 #import "RACDemo.h"
 #import "SlideMenuNavigationController.h"
 #import "Mediator.h"
+#import "WebViewTest.h"
+#import "CheckClientCertificationTest.h"
 
 @interface AppDelegate ()
 
@@ -23,6 +25,8 @@
 
 //    [JSPatchDemo test];
     [RACDemo test];
+//    [WebViewTest test];
+    [CheckClientCertificationTest test];
     
     //初始化加载view
     [((SlideMenuNavigationController *)self.window.rootViewController) view];

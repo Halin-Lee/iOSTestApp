@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>WebView</title>
+    <script type="text/javascript">
+
+    function onComplete() {
+           alert("onComplete" + document.getElementById('1').innerText);
+
+        }
+    function onError(error) {
+           alert("error");
+        }
+    function YQTranslate(){
+            Microsoft.Translator.Widget.Translate("en", "zh-CHS", null, onError, onComplete, null, 6000);
+        }
+
+
+
+    </script>
+    <script src="http://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**"
+            type="text/javascript"></script>
+
+
+</head>
+<body>
+<input onclick="YQTranslate()" type="button" value="点击我，弹出警告框"/>
+<div class="preview-text" id="1">
+    First This is an example of the text on your webpage. Click on the Translate button to see what
+    your
+    site’s visitors will see! Remember, the widget will show in the language of the visitor’s
+    browser.
+</div>
+
+<div class="preview-text" id="2">
+    Second This is an example of the text on your webpage. Click on the Translate button to see what
+    your
+    site’s visitors will see! Remember, the widget will show in the language of the visitor’s
+    browser.
+</div>
+
+<div class="preview-text" id="3">
+    Third This is an example of the text on your webpage. Click on the Translate button to see what
+    your
+    site’s visitors will see! Remember, the widget will show in the language of the visitor’s
+    browser.
+</div>
+</body>
+</html>

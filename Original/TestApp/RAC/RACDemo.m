@@ -13,7 +13,8 @@
 #import "RACReplaySubjectDemo.h"
 #import "RACSequence_RACTupleDemo.h"
 #import "RACCommandDemo.h"
-
+#import "RACSelectorDemo.h"
+#import "RACDemoService.h"
 
 @implementation RACDemo
 
@@ -24,6 +25,10 @@
 //    [RACReplaySubjectDemo test];
 //    [RACSequence_RACTupleDemo test];
 //    [RACCommandDemo test];
+//    [RACSelectorDemo test];
+    [RACDemoServiceTestCase test];
+
+    
     
 }
 
